@@ -2,58 +2,18 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
-    {
-          text: 'Partners',
-          href: getPermalink('/company/partners'),
-    },
-    {
-      text: 'Solutions',
-      links: [
-        {
-          text: 'Slack Connect Alternative',
-          href: getPermalink('/solutions/slack-connect-alternative'),
-        },
-        {
-          text: 'Real-time PRM',
-          href: getPermalink('/solutions/realtime-prm'),
-        },
-        {
-          text: 'Ephemeral Co-selling',
-          href: getPermalink('/solutions/ephemeral-coselling'),
-        },
-      ],
-    },
-    {
-      text: 'Product',
-      links: [
-        {
-          text: 'Pricing',
-          href: getPermalink('/pricing'),
-        },
-        {
-          text: 'Get a 14-day free trial',
-          href: 'https://forms.fillout.com/t/bHn1ZhE6oLus',
-        },
-      ],
-    },
   ],
-  actions: [{ text: 'Get a 14-day free trial', href: 'https://forms.fillout.com/t/bHn1ZhE6oLus', target: '_blank' }],
+  actions: [{ text: 'Create an account', href: 'https://joinoasis.mn.co/share/uy9GF2G6bUT1mPd8?utm_source=manual', target: '_blank' }],
 };
 
 export const footerData = {
   links: [
     {
-      title: 'Solutions',
-      links: [
-        { text: 'Slack Connect Alternative', href: '/solutions/slack-connect-alternative' },
-        { text: 'Real-time PRM', href: '/solutions/realtime-prm' },
-      ],
-    },
-    {
       title: 'Company',
       links: [
         { text: 'Blog', href: '/blog' },
-        { text: 'Partners', href: '/company/partners' },
+        { text: 'Affiliates', href: '' },
+        { text: 'Job Board', href: '' },
       ],
     },
   ],
