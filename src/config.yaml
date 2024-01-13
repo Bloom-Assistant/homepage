@@ -1,6 +1,6 @@
 site:
   name: Oasis
-  site: 'https://www-tryoasis-io.vercel.app/'
+  site: 'https://www.getoasis.io'
   base: '/'
   trailingSlash: false
 
@@ -11,14 +11,14 @@ metadata:
   title:
     default: Oasis
     template: '%s — Oasis'
-  description: "\U0001F680 The brandable hub for real time partner collaboraiton."
+  description: "\U0001F680 The community for people who give a 💩"
   robots:
     index: true
     follow: true
   openGraph:
     site_name: Oasis
     images:
-      - url: '~/assets/images/default.png'
+      - url: '~/assets/images/meta.png'
         width: 1200
         height: 628
     type: website

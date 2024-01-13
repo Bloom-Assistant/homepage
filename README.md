@@ -158,9 +158,9 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: 'Example'
+    default: 'Oasis'
     template: '%s — Example'
-  description: 'This is the default meta description of Example website'
+  description: 'The community for people who give a 💩'
   robots:
     index: true
     follow: true
