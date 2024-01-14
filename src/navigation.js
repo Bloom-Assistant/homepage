@@ -2,6 +2,37 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
+{
+  text: 'What we are',
+  links: [
+    {
+      text: 'Mighty Networks Chat',
+      href: getPermalink('/community/mighty-networks'),
+    },
+    {
+      text: 'Direct Action Network',
+      href: getPermalink('/community/direct-action'),
+    },
+    {
+      text: 'Independent Journalism',
+      href: getPermalink('/community/independent-journalism'),
+    },
+  ],
+},
+{
+  text: 'Get involved',
+  links: [
+    { text: 'Blog', href: '/blog' },
+    {
+      text: 'Collaborate with us',
+      href: getPermalink('/get-involved/collaborate'),
+    },
+    {
+      text: 'Sponsor our work',
+      href: getPermalink('/get-involved/sponsor'),
+    },
+  ],
+},
   ],
   actions: [{ text: 'Create an account', href: 'https://joinoasis.mn.co/share/uy9GF2G6bUT1mPd8?utm_source=manual', target: '_blank' }],
 };
