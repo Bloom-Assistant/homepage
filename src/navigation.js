@@ -24,8 +24,12 @@ export const headerData = {
   links: [
     { text: 'Blog', href: '/blog' },
     {
-      text: 'Collaborate with us',
-      href: getPermalink('/get-involved/collaborate'),
+      text: 'Aid Services Directory (Coming Soon!)',
+      href: getPermalink('#'),
+    },
+    {
+      text: 'Direct Action Team (Coming Soon!)',
+      href: getPermalink('#'),
     },
     {
       text: 'Sponsor our work',
@@ -34,7 +38,7 @@ export const headerData = {
   ],
 },
   ],
-  actions: [{ text: 'Create an account', href: 'https://joinoasis.mn.co/share/uy9GF2G6bUT1mPd8?utm_source=manual', target: '_blank' }],
+  actions: [{ text: 'Get a 14-day trial', href: 'https://joinoasis.mn.co/plans/371036?bundle_token=c1bb0657c371a9743749fe9945fd3349&utm_source=manual', target: '_blank' }],
 };
 
 export const footerData = {

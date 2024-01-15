@@ -1,0 +1,41 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero2 from '~/components/widgets/Hero2.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Subscription Landing Page Demo',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Join the community"
+    title="Join the movement of human rights advocates who give a 💩"
+    subtitle="Gain access to a deep support network of advocates and providers who are ready to collaborate and deply to reduce human suffering"
+    actions={[
+      { variant: 'primary', text: 'Become a member', href: 'https://joinoasis.mn.co/plans/371036?bundle_token=c1bb0657c371a9743749fe9945fd3349&utm_source=manual', icon: 'tabler:square-rounded-arrow-right' },
+      { text: 'Learn more', href: '/' },
+    ]}
+    image={{
+      src: 'https://images.pexels.com/photos/5235728/pexels-photo-5235728.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      alt: 'Ironic image associated with canceling a subscription. Subscription Landing Page Demo',
+    }}
+  />
+
+  <CallToAction
+    title="Interested in learning more?"
+    subtitle="Check out our blog to get a sense of what we're about"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Read blog posts',
+        href: '/blog',
+        icon: 'tabler:eye',
+      },
+    ]}
+  />
+</Layout>
