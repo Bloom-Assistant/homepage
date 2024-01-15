@@ -11,6 +11,19 @@ import { UI } from '~/utils/config';
     }
   }
 
+
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){if(window.analytics.initialized)return window.analytics[e].apply(window.analytics,arguments);var i=Array.prototype.slice.call(arguments);i.unshift(e);analytics.push(i);return analytics}};for(var i=0;i<analytics.methods.length;i++){var key=analytics.methods[i];analytics[key]=analytics.factory(key)}analytics.load=function(key,i){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=i};analytics._writeKey="Qxquw7W7ZjXynusMDG94MCbQhgYzWalG";analytics.SNIPPET_VERSION="4.16.1";
+      analytics.load("Qxquw7W7ZjXynusMDG94MCbQhgYzWalG");
+      analytics.page({
+        path: window.location.pathname,
+        url: window.location.href,
+        referrer: document.referrer,
+        search: window.location.search,
+        title: document.title,
+        name: document.title,
+      });
+      }}();
+
   if ((defaultTheme && defaultTheme.endsWith(':only')) || (!localStorage.theme && defaultTheme !== 'system')) {
     applyTheme(defaultTheme.replace(':only', ''));
   } else if (
@@ -123,15 +136,66 @@ import { UI } from '~/utils/config';
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
+    var button = document.getElementById("direct-action-button");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Direct action button Clicked!", {
+        // You can include additional properties here
+        button_text: "Join the movement",
+        value: 35,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("direct-action-header");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Direct action header clicked", {
+        // You can include additional properties here
+        button_text: "Join the community",
+        value: 35,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("journalism-signup-header");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Direct action header clicked", {
+        // You can include additional properties here
+        button_text: "Become a member",
+        value: 35,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
     var button = document.getElementById("sponsor-cta");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Pricing CTA Clicked", {
+      analytics.track("Sponsor page CTA clicked", {
         // You can include additional properties here
-        button_text: "Schedule a Consultation",
-        value: 12.75,
+        button_text: "Join the community",
+        value: 35,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -140,15 +204,15 @@ import { UI } from '~/utils/config';
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("resin-hero");
+    var button = document.getElementById("sponsor-cards");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Resin Hero Clicked", {
+      analytics.track("Sponsor pricing clicked", {
         // You can include additional properties here
-        button_text: "Join the waiting list!",
-        value: 12.75,
+        button_text: "Schedule a call",
+        value: 450,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -157,15 +221,32 @@ import { UI } from '~/utils/config';
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("resin-cta");
+    var button = document.getElementById("journalism-signup-button");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Resin CTA clicked", {
+      analytics.track("Journalism page Hero clicked", {
         // You can include additional properties here
-        button_text: "Join the waiting list!",
-        value: 12.75,
+        button_text: "Join the movement",
+        value: 35,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("mighty-networks-header");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Mighty Networks Page Header Clicked!", {
+        // You can include additional properties here
+        button_text: "Join the community",
+        value: 35,
         currency: "USD",
         // Add any other relevant properties
       });

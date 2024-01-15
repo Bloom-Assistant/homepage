@@ -21,11 +21,12 @@ const metadata = {
   <Fragment slot="header">
     <Header
       {...headerData}
+      id="direct-action-header"
       actions={[
         {
           variant: 'secondary',
-          text: 'Join the waitlist',
-          href: 'https://forms.fillout.com/t/bHn1ZhE6oLus',
+          text: 'Join the community',
+          href: 'https://joinoasis.mn.co/share/uy9GF2G6bUT1mPd8?utm_source=manual',
         },
       ]}
       isSticky
@@ -37,7 +38,7 @@ const metadata = {
   <Hero2
     tagline="Get involved like never before possible"
     actions={[
-      { variant: 'primary', target: '_blank', text: 'Join the movement', href: 'https://joinoasis.mn.co/share/uy9GF2G6bUT1mPd8?utm_source=manual' },
+      { variant: 'primary',id: 'direct-action-button', target: '_blank', text: 'Join the movement', href: 'https://joinoasis.mn.co/share/uy9GF2G6bUT1mPd8?utm_source=manual' },
     ]}
     image={{
       src: 'https://www.aljazeera.com/wp-content/uploads/2023/10/2023-10-13T122849Z_1218346467_RC2OR3AS8KJX_RTRMADP_3_ISRAEL-PALESTINIANS-YEMEN-PROTEST-1697204930.jpg?resize=1920%2C1080',
