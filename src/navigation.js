@@ -3,7 +3,7 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
 {
-  text: 'What we are',
+  text: 'Services',
   links: [
     {
       text: 'Mighty Networks Chat',
@@ -20,7 +20,7 @@ export const headerData = {
   ],
 },
 {
-  text: 'Get involved',
+  text: 'Resources',
   links: [
     { text: 'Blog', href: '/blog' },
     {
@@ -35,6 +35,13 @@ export const headerData = {
       text: 'Sponsor our work',
       href: getPermalink('/get-involved/sponsor'),
     },
+  ],
+},
+{
+  text: 'About',
+  links: [
+    { text: 'Founder Story (Coming Soon)', href: '#' },
+    { text: 'Why a paid community? (Coming Soon)', href: '#' },
   ],
 },
   ],
