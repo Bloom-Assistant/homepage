@@ -3,7 +3,7 @@ title: "You people make me sick."
 excerpt: Philosopher Jiddu Krishnamurti once said, “It is no measure of health to be well adjusted to a profoundly sick society.”
 publishedAt: 2024-01-14T00:00:00Z
 image: https://images.pexels.com/photos/3951377/pexels-photo-3951377.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2
-category: HumanRights
+category: Human Rights
 tags: 
     - gaza
     - israel
@@ -48,4 +48,5 @@ So as an American, with all of our collective independence and **freedom*, would
 
 Because at the end of the day, it doesn't really effect you, you're able to go to work and relax knowing the brown people are bad and the white people are good. You don't really care if people are [getting kicked out of there generational homes by settlers](https://www.youtube.com/watch?v=KNqozQ8uaV8) on live broadcast, because it **won't happen to you**. 
 
-For the rest of you, please keep the fight going...there are good people in the world ready to put in the work it takes to see a brighter future for the people of Palestine. I started Oasis as a way to support my efforts in both writing content and to provide stories that educate others about issues that are creating suffering in not only Gaza, but all across the globe. So if you like my content, consider [buying me a coffee](https://www.buymeacoffee.com/getoasis) to help me continue this work. Also if you're a company who would like to sponsor Oasis, whether publicly or anonymously, [shoot me an email](james@getoasis.io) and let's discuss our packages. As always, from the river to the sea, palestine will be free 🇵🇸🇵🇸🇵🇸.
+For the rest of you, please keep the fight going...there are good people in the world ready to put in the work it takes to see a brighter future for the people of Palestine. I started Oasis as a way to support my efforts in both writing content and to provide stories that educate others about issues that are creating suffering in not only Gaza, but all across the globe. So if you like my content, consider [buying me a coffee](https://www.buymeacoffee.com/getoasis) to help me continue this work. Also if you're a company who would like to sponsor Oasis, whether publicly or anonymously, [shoot me an email](mailto:james@getoasis.io) and let's discuss our packages. As always, from the river to the sea, palestine will be free 🇵🇸🇵🇸🇵🇸.
+

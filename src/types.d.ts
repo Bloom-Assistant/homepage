@@ -20,6 +20,14 @@ export interface Post {
   title: string;
   /** Optional summary of post content. */
   excerpt?: string;
+  ctaVariant?: string;
+  ctaId?: string;
+  ctaText?: string;
+  ctaHref?: string;
+  ctaTarget?: string;
+  fragmentA?: string;
+  fragmentB?: string;
+  
   /**  */
   image?: string;
 
