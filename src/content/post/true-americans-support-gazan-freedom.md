@@ -18,4 +18,4 @@ So what does freedom mean? What does it mean to fight for your freedom when you'
 
 We idealize the scenario where we have to fight for our freedoms, but there are teenage girls in the West Bank with more traits in common with our founding fathers than the average conservative 30yo who whinges about freedom. In fact, a good example of this is BBC's coverage of [Ahed Tamimi's slap of an IOF soldier in 2018](https://www.bbc.com/news/av/world-middle-east-42884885). The simple fact that anyone is asking whether her action made her terrorist or not shows how mentally fucking warped the West has become... 
 
-[![](~/assets/images/membersonly.png)](https://joinoasis.mn.co/plans/372205?bundle_token=d59e43884a647b8227f91e0b1d9dc2ce&utm_source=manual)
+[![](~/assets/images/membersonly.png)](https://joinoasis.mn.co/share/uy9GF2G6bUT1mPd8?utm_source=manual)

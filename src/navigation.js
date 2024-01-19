@@ -45,7 +45,7 @@ export const headerData = {
   ],
 },
   ],
-  actions: [{ text: 'Get a 14-day trial', href: 'https://joinoasis.mn.co/plans/371036?bundle_token=c1bb0657c371a9743749fe9945fd3349&utm_source=manual', target: '_blank' }],
+  actions: [{ text: 'Create a free account', href: 'https://joinoasis.mn.co/share/uy9GF2G6bUT1mPd8?utm_source=manual', target: '_blank' }],
 };
 
 export const footerData = {
