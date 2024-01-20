@@ -12,3 +12,4 @@ metadata:
     canonical: https://wwww.getoasis.io/you-dont-know-shit-about-hamas
 draft: true
 ---
+
