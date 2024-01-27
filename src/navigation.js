@@ -3,49 +3,25 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 export const headerData = {
   links: [
 {
-  text: 'Services',
-  links: [
-    {
-      text: 'Mighty Networks Chat',
-      href: getPermalink('/community/mighty-networks'),
-    },
-    {
-      text: 'Direct Action Network',
-      href: getPermalink('/community/direct-action'),
-    },
-    {
-      text: 'Independent Journalism',
-      href: getPermalink('/community/independent-journalism'),
-    },
-  ],
+  text: 'About',
+  href: getPermalink('/community/open-source-collective'),
 },
 {
   text: 'Resources',
   links: [
     { text: 'Blog', href: '/blog' },
     {
-      text: 'Aid Services Directory (Coming Soon!)',
-      href: getPermalink('#'),
+      text: 'Join the Slack',
+      href: 'https://join.slack.com/t/joinoasis/shared_invite/zt-2ambp7cf6-y3XrgUYYHfE3RFBLOwKs4Q',
     },
     {
-      text: 'Direct Action Team (Coming Soon!)',
-      href: getPermalink('#'),
-    },
-    {
-      text: 'Sponsor our work',
-      href: getPermalink('/get-involved/sponsor'),
+      text: 'Apply for membership',
+      href: 'https://forms.fillout.com/t/mZ2kbN1bejus',
     },
   ],
 },
-{
-  text: 'About',
-  links: [
-    { text: 'Founder Story (Coming Soon)', href: '#' },
-    { text: 'Why a paid community? (Coming Soon)', href: '#' },
   ],
-},
-  ],
-  actions: [{ text: 'Create a free account', href: 'https://joinoasis.mn.co/share/uy9GF2G6bUT1mPd8?utm_source=manual', target: '_blank' }],
+  actions: [{ text: 'Apply for membership', href: 'https://forms.fillout.com/t/mZ2kbN1bejus', target: '_blank' }],
 };
 
 export const footerData = {

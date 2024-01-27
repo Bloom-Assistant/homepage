@@ -12,6 +12,7 @@ import Contact from '~/components/widgets/Contact.astro';
 import FAQs from '~/components/widgets/FAQs.astro';
 import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
+import TypeIt from "typeit";
 
 const metadata = {
   title: 'Oasis - The community for people who give a 💩',
@@ -26,7 +27,7 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Become a member',
+        text: 'Apply to join the collective',
         id: 'home-hero',
         href: '/community/become-a-member',
         target: '_blank',
@@ -35,45 +36,45 @@ const metadata = {
     ]}
   >
     <Fragment slot="title">
-      The community for humans who give a 💩
+      The tech collective for <span class="typewriter"></span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Join the private community for human rights professionals and peace advocates to organize and collaborate
+        We're building a community-powered tech collective to power the next generation of social advocacy through a hybrid economic model.
     </Fragment>
   </Hero>
   <!-- Features Widget *************** -->
 
   <Features
-    id="amenities"
-    tagline="The Amenities"
-    title="What amenities does Oasis provide?"
-    subtitle="We're providing you with hard hitting, homegrown, and handpicked content and advocacy opportunities"
+    id="vision"
+    tagline="The Vision"
+    title="What is the goal of Oasis?"
+    subtitle="We're building profit-driven products to fund non-profit social advocacy"
     items={[
       {
-        title: 'Weekly collaboration meetings',
+        title: 'Hybrid economic model',
         description:
-          'Discuss the weeks world events and how we can collectively ease human suffering',
-        icon: 'tabler:messages',
+          'Take the best parts of out of the capitalist model to fund social good initiatives',
+        icon: 'tabler:discount-check',
       },
       {
-        title: 'Mutual Aid Resources',
+        title: 'Open Source Projects',
         description:
-          'Free resources and events for providing assistence to grounds and individuals in distress',
-        icon: 'tabler:heart-handshake',
+          'All of our projects are open source and available for anyone to contribute to',
+        icon: 'tabler:brand-git',
       },
       {
-        title: 'Embedded Journalism',
+        title: 'Community Driven',
         description:
-          'Private embedded videos and live content direct from the source from a network of partners',
-        icon: 'tabler:map',
+          'We allow anyone to participate and contribute to our projects and initiatives',
+        icon: 'tabler:building-community',
       },
       {
-        title: 'Data analysis and interviews',
+        title: 'Social Advocacy',
         description:
-          'Interviews and panels with key human rights figures to discuss world events',
-        icon: 'tabler:dashboard',
+          'We believe that the best way to make change is to empower people to make change',
+        icon: 'tabler:speakerphone',
       },
     ]}
   />
@@ -83,22 +84,22 @@ const metadata = {
   <Content
     isReversed
     tagline="Get involved"
-    title="It's time to make ourselves heard"
+    title="Interested in joining?"
     items={[
       {
-        title: 'Actionable advocacy resources',
+        title: 'Shared Ownership',
         description:
-          'We believe that one of the patterns keeping real change from happening is words. There is lots of words and not a lot of action. We provide a community to discuss real active change. ',
+          'Do you want to work on projects that you are able to share into the success of? We offer shared ownership of all of our projects to our contributors',
       },
       {
-        title: 'Networking Opportunities',
+        title: 'Multiple Contribution Models',
         description:
-          'Connect with other like-minded people who want to ease human suffering',
+          'We offer multiple ways to contribute to our projects, including code, design, and community management',
       },
       {
-        title: 'Encrypted channels',
+        title: 'Co-op Model',
         description:
-          'Need to discuss a activism project securely? We provide access to secure channels for organizing and mobilization',
+          'The success rate of co-ops is much higher than traditional startups, and we are able to fund our projects through collective collaboration',
       },
     ]}
     image={{
@@ -107,8 +108,8 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Stop screaming into the void, we'll listen</h3>
-      Our community is full of people who have been yelling into the void about social issues. Let's ORGANIZE!
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">We're working on some pretty awesome projects at the moment</h3>
+      Here's some of the perks of joining our collective:
     </Fragment>
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-page dark:bg-transparent"></div>
@@ -284,18 +285,18 @@ const metadata = {
       {
         variant: 'primary',
         id: 'home-cta',
-        text: 'Join the community today',
-        href: 'https://joinoasis.mn.co/share/uy9GF2G6bUT1mPd8?utm_source=manual',
+        text: 'Apply to join the collective',
+        href: 'https://forms.fillout.com/t/mZ2kbN1bejus',
         target: '_blank',
       },
     ]}
   >
     <Fragment slot="title">
-      See what the buzz is about  <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">today</span>
+      Join the collective <br class="block sm:hidden" /><span class="sm:whitespace-nowrap">today</span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Start collaborating with other humans <br class="hidden md:inline" /> now!
+      Come see what we're working on 
     </Fragment>
   </CallToAction>
 </Layout>
