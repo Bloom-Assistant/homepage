@@ -193,15 +193,33 @@ import TypeIt from "typeit";
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("journalism-signup-header");
+    var button = document.getElementById("home-cta");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Direct action header clicked", {
+      analytics.track("Home CTA clicked", {
         // You can include additional properties here
-        button_text: "Become a member",
-        value: 35,
+        button_text: "Apply to join the collective",
+        value: 200,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("home-hero");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Home Hero clicked", {
+        // You can include additional properties here
+        button_text: "Apply to join the collective",
+        value: 200,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -210,15 +228,15 @@ import TypeIt from "typeit";
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("sponsor-cta");
+    var button = document.getElementById("oss-cta");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Sponsor page CTA clicked", {
+      analytics.track("Open Source page CTA clicked", {
         // You can include additional properties here
         button_text: "Join the community",
-        value: 35,
+        value: 200,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -227,32 +245,15 @@ import TypeIt from "typeit";
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("sponsor-cards");
+    var button = document.getElementById("open-source-hero");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Sponsor pricing clicked", {
+      analytics.track("Open Source Hero clicked", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 450,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("journalism-signup-button");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("Journalism page Hero clicked", {
-        // You can include additional properties here
-        button_text: "Join the movement",
-        value: 35,
+        value: 200,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -269,7 +270,7 @@ import TypeIt from "typeit";
       analytics.track("Open Source Page Header Clicked!", {
         // You can include additional properties here
         button_text: "Join the community",
-        value: 35,
+        value: 200,
         currency: "USD",
         // Add any other relevant properties
       });
