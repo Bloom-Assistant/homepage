@@ -1,0 +1,257 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Pricing from '~/components/widgets/Pricing.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Community Led Open Source Collective',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      id="open-source-header"
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'Give our current project a 🌟',
+          href: 'https://www.github.com/tryportcullis/portcullis',
+        },
+      ]}
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Open Core Projects"
+    actions={[
+      { variant: 'primary', id:'open-source-hero', target: '_black', text: 'Check out our projects', href: '#projects' },
+    ]}
+    image={{
+      src: 'https://images.pexels.com/photos/3889891/pexels-photo-3889891.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      alt: 'Oasis Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+      Building profit-aware products for social advocacy flywheels
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Contribute to fair-source projects that have a mission to make the world a better place through social advocacy and direct action
+    </Fragment>
+  </Hero2>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="features"
+    title="Community-Led Open Source Collective"
+    subtitle="We are a community of professionals from all walks of life that are creating revenue-generating products to fund social advocacy and direct action"
+    columns={2}
+    items={[
+      {
+        title: 'Community Driven',
+        description:
+          'Our community is the heart of our organization. All of our collaboration and decision making is done through a public Slack workspace.',
+        icon: 'tabler:brand-slack',
+      },
+      {
+        title: 'Shared Ownership',
+        description: `We believe that everyone should have a say in the direction of the organization. That's why we use a ESOP model to distribute ownership to all members.`,
+        icon: 'tabler:layers-intersect',
+      },
+      {
+        title: 'Social Advocacy',
+        description:
+          'We always put our social mission first. We are committed to using our collective resources to make the world a better place.',
+        icon: 'tabler:seeding',
+      },
+      {
+        title: 'Transparent Records',
+        description: `We believe that transparency is the key to a healthy organization. That's why we publish all of our financial records and meeting notes.`,
+        icon: 'tabler:zoom-money',
+      },
+    ]}
+  />
+
+  <Content
+    title="Current Projects"
+    subtitle="Learn more about the projects that we are currently working on"
+    id="projects"
+    isReversed
+    items={[
+      {
+        title: 'Description:',
+        description:
+          'Portcullis is a modern client portal that allows you to collaborate with your clients in a secure and private environment. It is designed to be a white-label solution that you can customize to match your brand.',
+      },
+      {
+        title: 'Benefits:',
+        description: `Allows service agencies and freelancers to collaborate with their clients in a secure and private environment while maintaining their brand identity. <br /> Provides a modern and intuitive user experience that is easy to use for both clients and service providers. <br /> Provides a secure and private environment for clients to share sensitive information with their service providers.`,
+      },
+    ]}
+    image={{
+      src: '~/assets/images/portcullis.png',
+      alt: 'Startup Image',
+    }}
+  >
+    <Fragment slot="content">
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+        Project #1 <br /><span class="text-2xl">Portcullis: The Client Portal that doesn't sacrifice</span>
+      </h3>
+    </Fragment>
+
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+    </Fragment>
+  </Content>
+<!--
+  <Content
+  isAfterContent
+  items={[
+    {
+      title: 'Description:',
+      description:
+        'Portcullis is a modern client portal that allows you to collaborate with your clients in a secure and private environment. It is designed to be a white-label solution that you can customize to match your brand.',
+    },
+    {
+      title: 'Benefits:',
+      description: `Allows service agencies and freelancers to collaborate with their clients in a secure and private environment while maintaining their brand identity. <br /> Provides a modern and intuitive user experience that is easy to use for both clients and service providers. <br /> Provides a secure and private environment for clients to share sensitive information with their service providers.`,
+    },
+  ]}
+  image={{
+    src: '~/assets/images/portcullis.png',
+    alt: 'Startup Image',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      Project #1 <br /><span class="text-2xl">Portcullis: The Client Portal that doesn't sacrifice</span>
+    </h3>
+  </Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>-->
+
+  <!-- Pricing Widget *******************
+
+  <Pricing
+    title="Flexible pricing plans"
+    prices={[
+      {
+        title: 'free',
+        subtitle: 'Access to core features and a wide range of templates',
+        price: '0',
+        period: '/ month',
+        callToAction: {
+          target: '_blank',
+          text: 'Get Started for Free',
+          href: '#',
+        },
+      },
+      {
+        title: 'pro',
+        subtitle: 'Premium templates and advanced customization',
+        price: 15,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Upgrade to Pro',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'popular',
+      },
+      {
+        title: 'Enterprise',
+        subtitle: 'Tailored solutions for large-scale projects',
+        price: 45,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Unlock Enterprise Features',
+          href: '#',
+        },
+      },
+    ]}
+  />-->
+
+  <!-- FAQs Widget
+
+  <FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'Why not just use Slack?',
+        description:
+          'Slack is a great tool, but it has a few big drawbacks. First, it lacks account mapping abilities that creating an Oasis would provide. Second, its not brandable. With an Oasis, you can customize the look and feel to match your brand.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'How many partners can I bring into the platform?',
+        description: `We are still trying to get a feel for how much scale we can handle at our first stage of development, so once we launch we will have a cap on 300 partners in a single ecosystem.`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'When are you planning to launch?',
+        description:
+          'Good question! We plan to launch our first version os Oasis before the first of the new year. If you want to be notified when we launch, please sign up for the waitlist.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Are you looking for partners?',
+        description: `Absolutely, right now we're looking for tech partners to help us build out our integrations. If you're interested, please reach out to us`,
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-page dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs> -->
+
+  
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        id: 'open-source-cta',
+        text: 'Checkout out our Github',
+        icon: 'tabler:brand-github',
+        href: 'https://www.github.com/tryoasis/',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+      Check out what we're working on
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        If you're interested in contributing, check out our Github.
+    </Fragment>
+  </CallToAction>
+
+  <!-- Steps2 Widget ****************** -->
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[#FFEDF4] dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>

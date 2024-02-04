@@ -2,26 +2,47 @@ import { getPermalink, getBlogPermalink, getAsset } from './utils/permalinks';
 
 export const headerData = {
   links: [
+    {
+      text: 'Services',
+      links: [
+        { text: 'Open Source Collective', href: '/services/open-source-collective' },
+        {
+          text: 'Data Pipeline Audits',
+          href: '/services/data-pipeline-audits',
+        },
+        {
+          text: 'Technical Consulting',
+          href: '/services/technical-consulting',
+        },
+      ],
+    },
 {
-  text: 'About',
-  href: getPermalink('/community/open-source-collective'),
-},
-{
-  text: 'Resources',
+  text: 'Who we are',
   links: [
-    { text: 'Blog', href: '/blog' },
     {
-      text: 'Join the Slack',
-      href: 'https://join.slack.com/t/joinoasis/shared_invite/zt-2ambp7cf6-y3XrgUYYHfE3RFBLOwKs4Q',
+      text: 'Our Principles',
+      href: '/our-principles',
     },
     {
-      text: 'Apply for membership',
-      href: 'https://forms.fillout.com/t/mZ2kbN1bejus',
+      text: 'Our Model',
+      href: '/our-model',
+    },
+    {
+      text: 'Sponsor our work',
+      href: '/sponsor',
     },
   ],
 },
+{
+  text: 'Blog',
+  href: getBlogPermalink(),
+},
+{
+  text: 'Client Portal',
+  href: 'https://portal.getoasis.io/login?step=signIn',
+},
   ],
-  actions: [{ text: 'Apply for membership', href: 'https://forms.fillout.com/t/mZ2kbN1bejus', target: '_blank' }],
+  actions: [{ text: 'Schedule a chat', href: 'https://calendly.com/getoasis', target: '_blank' }],
 };
 
 export const footerData = {
@@ -29,11 +50,24 @@ export const footerData = {
     {
       title: 'Company',
       links: [
-        { text: 'Blog', href: '/blog' },
-        { text: 'Affiliates', href: '' },
-        { text: 'Job Board', href: '' },
+        { text: 'Blog', href: getBlogPermalink() },
+        { text: 'Our Principles', href: '/our-principles' },
+        { text: 'Our Model', href: '/our-model' },
+        { text: 'Sponsor our work', href: '/sponsor' },
       ],
     },
+    {
+      title: 'Services',
+      links: [
+        { text: 'The Collective', href: '/services/open-source-collective' },
+        { text: 'Data Pipeline Audits', href: '/services/data-pipeline-audits' },
+        { text: 'Technical Consulting', href: '/services/technical-consulting' },
+      ],
+    },
+    {
+      title: 'Client Portal',
+      links: [{ text: 'Login', href: 'https://portal.getoasis.io/login?step=signIn' }],
+    }
   ],
   secondaryLinks: [
     { text: 'Terms', href: getPermalink('/terms') },

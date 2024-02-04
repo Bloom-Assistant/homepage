@@ -157,39 +157,6 @@ import TypeIt from "typeit";
 
   // Wait for the DOM to be fully loaded
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("direct-action-button");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("Direct action button Clicked!", {
-        // You can include additional properties here
-        button_text: "Join the movement",
-        value: 35,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("direct-action-header");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("Direct action header clicked", {
-        // You can include additional properties here
-        button_text: "Join the community",
-        value: 35,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
@@ -208,7 +175,6 @@ import TypeIt from "typeit";
     });
   });
 
-
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
     var button = document.getElementById("home-hero");
@@ -226,22 +192,6 @@ import TypeIt from "typeit";
     });
   });
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("oss-cta");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("Open Source page CTA clicked", {
-        // You can include additional properties here
-        button_text: "Join the community",
-        value: 200,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
@@ -276,6 +226,212 @@ import TypeIt from "typeit";
       });
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("data-pipeline-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Data Pipeline CTA clicked 🚰", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 8500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("data-pipeline-hero");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Data Pipeline Hero clicked 🚰", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 8500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("data-pipeline-header");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Data Pipeline Header clicked 🚰", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 8500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("technical-consulting-hero");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Technical Consulting Hero clicked ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 2500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("technical-consulting-header");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Technical Consulting Header clicked ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 2500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("technical-consulting-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Technical Consulting CTA clicked ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 2500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("custom-work-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Custom Work Pricing CTA clicked (Technical Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 2500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("audit-implementation-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Audit + Implement Pricing CTA clicked (Technical Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 2500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("audit-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Audit Pricing CTA clicked (Technical Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 2500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("cdp-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("CDP Pricing CTA clicked (Data Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 8500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("enrichment-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Enrichment Pricing CTA clicked (Data Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 8500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("full-cycle-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Full Cycle Pricing CTA clicked (Data Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 8500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
 
   window.onpageshow = function () {
     document.documentElement.classList.add('motion-safe:scroll-smooth');

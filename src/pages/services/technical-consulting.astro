@@ -1,0 +1,309 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+
+import Header from '~/components/widgets/Header.astro';
+import Hero2 from '~/components/widgets/Hero2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Steps2 from '~/components/widgets/Steps2.astro';
+import Content from '~/components/widgets/Content.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+
+import { headerData } from '~/navigation';
+import FAQs from '~/components/widgets/FAQs.astro';
+import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Technical Consulting',
+};
+---
+
+<Layout metadata={metadata}>
+  <Fragment slot="header">
+    <Header
+      {...headerData}
+      id="technical-consulting-header"
+      actions={[
+        {
+          variant: 'secondary',
+          text: 'Schedule a free consultation',
+          href: 'https://calendly.com/getoasis',
+        },
+      ]}
+    />
+  </Fragment>
+
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero2
+    tagline="Technical Consulting"
+    actions={[
+      { variant: 'primary', id:'technical-consulting-hero', target: '_black', text: 'Let us show you a better way', href: '#services' },
+    ]}
+    image={{
+      src: 'https://images.pexels.com/photos/3889891/pexels-photo-3889891.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      alt: 'Oasis Hero Image',
+    }}
+  >
+    <Fragment slot="title">
+        Let us show you how your business can thrive with third-party tools
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      <span class="hidden sm:inline">
+        Even in 2024, many business owners are still missing the mark when it comes to leveraging third-party tools to help their business grow.
+    </Fragment>
+  </Hero2>
+
+  <!-- Features Widget *************** -->
+
+  <Features
+    id="services"
+    title="What we can provide"
+    subtitle="We've been around the block and have become skilled in over 400 different technical solutions to various problems"
+    columns={2}
+    items={[
+      {
+        title: 'SMS Marketing',
+        description:
+          'We can help you set up a SMS marketing campaign that will help you reach your customers where they are.',
+        icon: 'tabler:message',
+      },
+      {
+        title: 'CDPs',
+        description: `We can help you set up a customer data platform that will help you better understand your customers.`,
+        icon: 'tabler:database',
+      },
+      {
+        title: 'Chatbots',
+        description:
+          'We can help you set up a chatbot that will help you automate your customer service and sales processes.',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'Automation',
+        description: `We can help you make your business more efficient by automating repetitive tasks.`,
+        icon: 'tabler:settings',
+      },
+    ]}
+  />
+
+  <Prices
+  prices={[
+    {
+      title: 'Tooling Audit',
+      subtitle: 'Learn the landscape',
+      price: ["$2500"],
+      period: 'Flat Rate',
+      items: [
+        {
+          description: 'Dedicated client portal',
+        },
+        {
+          description: 'Get a 6 month roadmap to better tooling',
+        },
+        {
+          description: 'Exclusive discounts from our partners',
+        },
+        {
+          description: '5 free hours of maintenance',
+        },
+      ],
+      callToAction: {
+        id: 'audit-cta',
+        text: 'Schedule a call',
+        href: 'https://calendly.com/getoasis',
+      },
+    },
+    {
+      title: 'Audit + Implementation',
+      subtitle: 'Implement the landscape',
+      price: ["$2500"],
+      period: 'Flat Rate + $500/mo for 6 months',
+      items: [
+        {
+          description: 'Everything from the audit package', 
+        },
+        {
+          description: 'White glove implemetation',
+        },
+        {
+          description: '6 months of maintenance',
+        },
+        {
+          description: 'Dedicated account manager',
+        },
+      ],
+      callToAction: {
+        id: 'audit-implementation-cta',
+        text: 'Schedule a call',
+        href: 'https://calendly.com/getoasis',
+      },
+      hasRibbon: true,
+      ribbonTitle: 'popular',
+    },
+    {
+      title: 'Custom Work',
+      subtitle: 'We do custom work too!',
+      price: ["Contact Us"],
+      period: 'Custom Pricing | Installment Plan Available',
+      items: [
+        {
+          description: 'Anything you need, we can do it!', 
+        },
+        {
+          description: 'We can help you build a custom plan for your business',
+        },
+        {
+          description: 'Rocket your business to the next level',
+        },
+        {
+          description: 'You get a dedicated account manager',
+        },
+      ],
+      callToAction: {
+        id: 'custom-work-cta',
+        text: 'Schedule a call',
+        href: 'https://calendly.com/getoasis',
+      },
+    },
+  ]}
+/>
+
+
+<!--
+  <Content
+  isAfterContent
+  items={[
+    {
+      title: 'Description:',
+      description:
+        'Portcullis is a modern client portal that allows you to collaborate with your clients in a secure and private environment. It is designed to be a white-label solution that you can customize to match your brand.',
+    },
+    {
+      title: 'Benefits:',
+      description: `Allows service agencies and freelancers to collaborate with their clients in a secure and private environment while maintaining their brand identity. <br /> Provides a modern and intuitive user experience that is easy to use for both clients and service providers. <br /> Provides a secure and private environment for clients to share sensitive information with their service providers.`,
+    },
+  ]}
+  image={{
+    src: '~/assets/images/portcullis.png',
+    alt: 'Startup Image',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      Project #1 <br /><span class="text-2xl">Portcullis: The Client Portal that doesn't sacrifice</span>
+    </h3>
+  </Fragment>
+
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>-->
+
+  <!-- Pricing Widget *******************
+
+  <Pricing
+    title="Flexible pricing plans"
+    prices={[
+      {
+        title: 'free',
+        subtitle: 'Access to core features and a wide range of templates',
+        price: '0',
+        period: '/ month',
+        callToAction: {
+          target: '_blank',
+          text: 'Get Started for Free',
+          href: '#',
+        },
+      },
+      {
+        title: 'pro',
+        subtitle: 'Premium templates and advanced customization',
+        price: 15,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Upgrade to Pro',
+          href: '#',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'popular',
+      },
+      {
+        title: 'Enterprise',
+        subtitle: 'Tailored solutions for large-scale projects',
+        price: 45,
+        period: '/ Month',
+        callToAction: {
+          target: '_blank',
+          text: 'Unlock Enterprise Features',
+          href: '#',
+        },
+      },
+    ]}
+  />-->
+
+  <!-- FAQs Widget
+
+  <FAQs
+    title="Frequently Asked Questions"
+    items={[
+      {
+        title: 'Why not just use Slack?',
+        description:
+          'Slack is a great tool, but it has a few big drawbacks. First, it lacks account mapping abilities that creating an Oasis would provide. Second, its not brandable. With an Oasis, you can customize the look and feel to match your brand.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'How many partners can I bring into the platform?',
+        description: `We are still trying to get a feel for how much scale we can handle at our first stage of development, so once we launch we will have a cap on 300 partners in a single ecosystem.`,
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'When are you planning to launch?',
+        description:
+          'Good question! We plan to launch our first version os Oasis before the first of the new year. If you want to be notified when we launch, please sign up for the waitlist.',
+        icon: 'tabler:chevrons-right',
+      },
+      {
+        title: 'Are you looking for partners?',
+        description: `Absolutely, right now we're looking for tech partners to help us build out our integrations. If you're interested, please reach out to us`,
+        icon: 'tabler:chevrons-right',
+      },
+    ]}
+  >
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-page dark:bg-transparent"></div>
+    </Fragment>
+  </FAQs> -->
+
+  
+  <CallToAction
+    actions={[
+      {
+        variant: 'primary',
+        id: 'technical-consulting-cta',
+        text: 'Schedule a consultation',
+        href: 'https://calendly.com/getoasis',
+        target: '_blank',
+      },
+    ]}
+  >
+    <Fragment slot="title">
+        Ready to get started?
+    </Fragment>
+
+    <Fragment slot="subtitle">
+        <span class="hidden sm:inline">
+            Schedule a free consultation with one of our technical experts to see how we can help your business grow.
+        </span>
+    </Fragment>
+  </CallToAction>
+
+  <!-- Steps2 Widget ****************** -->
+    <Fragment slot="bg">
+      <div class="absolute inset-0 bg-[#FFEDF4] dark:bg-transparent"></div>
+    </Fragment>
+  </BlogLatestPosts>
+</Layout>

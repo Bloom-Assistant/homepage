@@ -22,24 +22,22 @@ const metadata = {
   <Fragment slot="header">
     <Header
       {...headerData}
-      id="open-source-header"
       actions={[
         {
           variant: 'secondary',
-          text: 'Apply for membership',
-          href: 'https://forms.fillout.com/t/mZ2kbN1bejus',
+          text: 'Schedule a call',
+          href: 'https://calendly.com/getoasis',
         },
       ]}
-      isSticky
     />
   </Fragment>
 
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Open-source Collective"
+    tagline="Hybrid economic model"
     actions={[
-      { variant: 'primary', id:'open-source-hero', target: '_blank', text: 'Apply for membership', href: 'https://forms.fillout.com/t/mZ2kbN1bejus' },
+      { variant: 'primary', id:'our-model-hero', target: '_black', text: 'Scedule a call', href: '#projects' },
     ]}
     image={{
       src: 'https://images.pexels.com/photos/3889891/pexels-photo-3889891.jpeg?auto=compress&cs=tinysrgb&w=1200',
@@ -47,12 +45,12 @@ const metadata = {
     }}
   >
     <Fragment slot="title">
-      Join a collective of professionals working to build a better society
+      We work within the constraints of our system for change
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Contribute to fair-source projects that have a mission to make the world a better place through social advocacy and direct action
+        We are using the systems designed institutions to create a flywheel of social advocacy
     </Fragment>
   </Hero2>
 
@@ -60,8 +58,8 @@ const metadata = {
 
   <Features
     id="features"
-    title="Community-Led Open Source Collective"
-    subtitle="We are a community of professionals from all walks of life that are creating revenue-generating products to fund social advocacy and direct action"
+    title="Why are model is effective"
+    subtitle="We use products and services to create self-sustaining social change"
     columns={2}
     items={[
       {
@@ -89,36 +87,35 @@ const metadata = {
     ]}
   />
 
+<!--
   <Content
-    title="Current Projects"
-    subtitle="Learn more about the projects that we are currently working on"
-    isReversed
-    items={[
-      {
-        title: 'Description:',
-        description:
-          'Portcullis is a modern client portal that allows you to collaborate with your clients in a secure and private environment. It is designed to be a white-label solution that you can customize to match your brand.',
-      },
-      {
-        title: 'Benefits:',
-        description: `Allows service agencies and freelancers to collaborate with their clients in a secure and private environment while maintaining their brand identity. <br /> Provides a modern and intuitive user experience that is easy to use for both clients and service providers. <br /> Provides a secure and private environment for clients to share sensitive information with their service providers.`,
-      },
-    ]}
-    image={{
-      src: '~/assets/images/portcullis.png',
-      alt: 'Startup Image',
-    }}
-  >
-    <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
-        Project #1 <br /><span class="text-2xl">Portcullis: The Client Portal that doesn't sacrifice</span>
-      </h3>
-    </Fragment>
+  isAfterContent
+  items={[
+    {
+      title: 'Description:',
+      description:
+        'Portcullis is a modern client portal that allows you to collaborate with your clients in a secure and private environment. It is designed to be a white-label solution that you can customize to match your brand.',
+    },
+    {
+      title: 'Benefits:',
+      description: `Allows service agencies and freelancers to collaborate with their clients in a secure and private environment while maintaining their brand identity. <br /> Provides a modern and intuitive user experience that is easy to use for both clients and service providers. <br /> Provides a secure and private environment for clients to share sensitive information with their service providers.`,
+    },
+  ]}
+  image={{
+    src: '~/assets/images/portcullis.png',
+    alt: 'Startup Image',
+  }}
+>
+  <Fragment slot="content">
+    <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">
+      Project #1 <br /><span class="text-2xl">Portcullis: The Client Portal that doesn't sacrifice</span>
+    </h3>
+  </Fragment>
 
-    <Fragment slot="bg">
-      <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
-    </Fragment>
-  </Content>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
+  </Fragment>
+</Content>-->
 
   <!-- Pricing Widget *******************
 
@@ -202,9 +199,9 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        id: 'oss-cta',
-        text: 'Apply to join the collective',
-        href: 'https://forms.fillout.com/t/mZ2kbN1bejus',
+        id: 'our-model-cta',
+        text: 'Schedule a call',
+        href: 'https://calendly.com/getoasis',
         target: '_blank',
       },
     ]}
