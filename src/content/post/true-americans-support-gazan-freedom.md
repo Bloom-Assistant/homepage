@@ -10,6 +10,7 @@ tags:
     - palestine conflict
 metadata:
     canonical: https://wwww.getoasis.io/true-americans-support-palestine
+draft: true
 ---
 
 Every person in the US has an idealized idea of what fighting for freedom is. We always do things like quote the founding fathers, watch Braveheart, and shoot off fireworks on Fourth of July, but I would say there is only a miniscule 0.0001% of citizens in the US who have had to actually fight for the freedoms we cherish. Even most soldiers are simply fighting to further the successes of corporate interests. 

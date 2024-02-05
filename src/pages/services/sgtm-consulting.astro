@@ -14,7 +14,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Technical Consulting',
+  title: 'sGTM Consulting',
 };
 ---
 
@@ -22,7 +22,7 @@ const metadata = {
   <Fragment slot="header">
     <Header
       {...headerData}
-      id="technical-consulting-header"
+      id="sgtm-consulting-header"
       actions={[
         {
           variant: 'secondary',
@@ -36,22 +36,22 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Technical Consulting"
+    tagline="Server Side Google Tag Manager Consulting"
     actions={[
-      { variant: 'primary', id:'technical-consulting-hero', target: '_black', text: 'Let us show you a better way', href: '#services' },
+      { variant: 'primary', id:'sgtm-consulting-hero', target: '_black', text: 'Retake your tagging', href: '#services' },
     ]}
     image={{
-      src: 'https://images.pexels.com/photos/3889891/pexels-photo-3889891.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      src: 'https://measureschool.com/wp-content/uploads/2023/09/New-Google-Tag-Missing-GA4-Configuration-Tag.png',
       alt: 'Oasis Hero Image',
     }}
   >
     <Fragment slot="title">
-        Let us show you how your business can thrive with third-party tools
+        Get your insights back with server side Google Tag Manager
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Even in 2024, many business owners are still missing the mark when it comes to leveraging third-party tools to help their business grow.
+        The new era of privacy is here, and with it comes a new era of tracking. With server side Google Tag Manager, you can take back control of your data and get the insights you need to grow your business.
     </Fragment>
   </Hero2>
 
@@ -60,30 +60,30 @@ const metadata = {
   <Features
     id="services"
     title="What we can provide"
-    subtitle="We've been around the block and have become skilled in over 400 different technical solutions to various problems"
+    subtitle="We can help you with a wide range of services to help you implement sGTM. Here are a few of the things we can help you with."
     columns={2}
     items={[
       {
-        title: 'SMS Marketing',
+        title: 'sGTM Implementation',
         description:
-          'We can help you set up a SMS marketing campaign that will help you reach your customers where they are.',
-        icon: 'tabler:message',
+          'We can help you understand how server side Google Tag Manager can help your business and how to implement it.',
+        icon: 'tabler:brand-google',
       },
       {
-        title: 'CDPs',
-        description: `We can help you set up a customer data platform that will help you better understand your customers.`,
+        title: 'Data Layer Implementation',
+        description: `We can help you implement a data layer that will help you track the data you need to grow your business.`,
         icon: 'tabler:database',
       },
       {
-        title: 'Chatbots',
+        title: 'Custom Event Tracking',
         description:
-          'We can help you set up a chatbot that will help you automate your customer service and sales processes.',
-        icon: 'tabler:robot',
+          'We can help you track custom events that are important to your business.',
+        icon: 'tabler:urgent',
       },
       {
-        title: 'Automation',
-        description: `We can help you make your business more efficient by automating repetitive tasks.`,
-        icon: 'tabler:settings',
+        title: 'Tag Management',
+        description: `We can help you manage your tags and make sure they're firing correctly.`,
+        icon: 'tabler:tag',
       },
     ]}
   />
@@ -91,35 +91,35 @@ const metadata = {
   <Prices
   prices={[
     {
-      title: 'Tooling Audit',
-      subtitle: 'Learn the landscape',
-      price: ["$2500"],
+      title: 'sGTM Consultation',
+      subtitle: 'Get a roadmap to sGTM success',
+      price: ["$8500"],
       period: 'Flat Rate',
       items: [
         {
           description: 'Dedicated client portal',
         },
         {
-          description: 'Get a 6 month roadmap to better tooling',
+          description: 'Get a 6 month roadmap to better tagging',
         },
         {
           description: 'Exclusive discounts from our partners',
         },
         {
-          description: '5 free hours of maintenance',
+          description: 'Discount on implementation',
         },
       ],
       callToAction: {
-        id: 'audit-cta',
+        id: 'sgtm-pricing-cta',
         text: 'Schedule a call',
         href: 'https://calendly.com/getoasis',
       },
     },
     {
-      title: 'Audit + Implementation',
-      subtitle: 'Implement the landscape',
-      price: ["$4500"],
-      period: 'Flat Rate + $500/mo for 6 months',
+      title: 'Consult + Implementation',
+      subtitle: 'Get help implementing sGTM',
+      price: ["$14,500"],
+      period: 'Flat Rate + $800/mo for 6 months',
       items: [
         {
           description: 'Everything from the audit package', 
@@ -135,7 +135,7 @@ const metadata = {
         },
       ],
       callToAction: {
-        id: 'audit-implementation-cta',
+        id: 'sgtm-implementation-pricing-cta',
         text: 'Schedule a call',
         href: 'https://calendly.com/getoasis',
       },
@@ -283,7 +283,7 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        id: 'technical-consulting-cta',
+        id: 'sgtm-cta',
         text: 'Schedule a consultation',
         href: 'https://calendly.com/getoasis',
         target: '_blank',

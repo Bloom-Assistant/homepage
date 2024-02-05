@@ -10,6 +10,7 @@ tags:
     - palestine conflict
 metadata:
     canonical: https://wwww.getoasis.io/you-people-make-me-sick
+draft: true
 ---
 
 So before I kick off this shitshow, I want to be clear...if you've engaged with me in a positive way in the past 3 months, or are someone who contributes to my work, or work adjacent to the work I do (Silent supporters are valid also), then you're not included in anything I'm about to say. 

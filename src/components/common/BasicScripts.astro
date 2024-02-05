@@ -432,6 +432,73 @@ import TypeIt from "typeit";
     });
   });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("sgtm-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("sGTM CTA clicked (sGTM Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 8500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("sgtm-pricing-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("sGTM Pricing CTA clicked (sGTM Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 8500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("sgtm-implementation-pricing-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("sGTM Implementation CTA clicked (sGTM Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 8500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("sgtm-consulting-hero");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("sGTM Consulting Hero Clicked (sGTM Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 8500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
 
   window.onpageshow = function () {
     document.documentElement.classList.add('motion-safe:scroll-smooth');

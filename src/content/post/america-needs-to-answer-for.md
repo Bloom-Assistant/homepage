@@ -10,7 +10,7 @@ tags:
     - palestine conflict
 metadata:
     canonical: https://wwww.getoasis.io/you-dont-know-shit-about-hamas
-draft: false
+draft: true
 ---
 
 **WARNING: THIS FOLLOWING BLOG POST CONTAINS VERY GRAPHIC IMAGERY. YOU HAVE BEEN WARNED**
