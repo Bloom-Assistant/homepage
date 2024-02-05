@@ -64,7 +64,7 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'The Collective', href: '/services/open-source-collective' },
+        { text: 'sGTM Consulting', href: '/services/sgtm-consulting' },
         { text: 'Data Pipeline Audits', href: '/services/data-pipeline-audits' },
         { text: 'Technical Consulting', href: '/services/technical-consulting' },
       ],
