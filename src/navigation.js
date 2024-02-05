@@ -30,9 +30,9 @@ export const headerData = {
       text: 'Our Model',
       href: '/our-model',
     },
-    {
-      text: 'Sponsor our work',
-      href: '/sponsor',
+    { 
+      text: 'Open Source', 
+      href: '/open-source'
     },
   ],
 },
@@ -56,9 +56,6 @@ export const footerData = {
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'Our Principles', href: '/our-principles' },
         { text: 'Our Model', href: '/our-model' },
-        { text: 'Sponsor our work', href: '/sponsor' },
-        { text: 'Open Source', href: '/open-source' },
-
       ],
     },
     {
