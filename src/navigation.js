@@ -45,7 +45,7 @@ export const headerData = {
   href: 'https://portal.getoasis.io/login?step=signIn',
 },
   ],
-  actions: [{ text: 'Schedule a chat', href: 'https://calendly.com/getoasis', target: '_blank' }],
+  actions: [{ text: 'Schedule a chat', href: '/schedule-a-demo', target: '_blank' }],
 };
 
 export const footerData = {
