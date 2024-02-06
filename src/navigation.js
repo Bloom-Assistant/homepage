@@ -6,8 +6,8 @@ export const headerData = {
       text: 'Services',
       links: [
         {
-          text: 'sGTM Consulting',
-          href: '/services/sgtm-consulting',
+          text: 'First Party Analytics Consulting',
+          href: '/services/first-party-analytics-consulting',
         },
         {
           text: 'Data Pipeline Audits',

@@ -391,7 +391,7 @@ import TypeIt from "typeit";
       analytics.track("CDP Pricing CTA clicked (Data Consulting) ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 8500,
+        value: 2500,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -408,7 +408,7 @@ import TypeIt from "typeit";
       analytics.track("Enrichment Pricing CTA clicked (Data Consulting) ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 8500,
+        value: 2500,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -425,7 +425,7 @@ import TypeIt from "typeit";
       analytics.track("Full Cycle Pricing CTA clicked (Data Consulting) ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 8500,
+        value: 2500,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -442,7 +442,7 @@ import TypeIt from "typeit";
       analytics.track("sGTM CTA clicked (sGTM Consulting) ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 8500,
+        value: 2500,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -459,7 +459,7 @@ import TypeIt from "typeit";
       analytics.track("sGTM Pricing CTA clicked (sGTM Consulting) ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 8500,
+        value: 2500,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -468,15 +468,15 @@ import TypeIt from "typeit";
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("sgtm-implementation-pricing-cta");
+    var button = document.getElementById("cdp-pricing-cta");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("sGTM Implementation CTA clicked (sGTM Consulting) ⚙️", {
+      analytics.track("CDP Implementation CTA clicked (CDP Consulting) ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 8500,
+        value: 2500,
         currency: "USD",
         // Add any other relevant properties
       });
@@ -485,15 +485,32 @@ import TypeIt from "typeit";
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("sgtm-consulting-hero");
+    var button = document.getElementById("analytics-consulting-hero");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("sGTM Consulting Hero Clicked (sGTM Consulting) ⚙️", {
+      analytics.track("Analytics Consulting Hero Clicked (Analytics Consulting) ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 8500,
+        value: 2500,
+        currency: "USD",
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("analytics-consulting-header");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Analytics Consulting Header Clicked (Analytics Consulting) ⚙️", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        value: 2500,
         currency: "USD",
         // Add any other relevant properties
       });

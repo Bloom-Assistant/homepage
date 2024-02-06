@@ -14,7 +14,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'sGTM Consulting',
+  title: 'First-party Analytics Consulting',
 };
 ---
 
@@ -22,7 +22,7 @@ const metadata = {
   <Fragment slot="header">
     <Header
       {...headerData}
-      id="sgtm-consulting-header"
+      id="analytics-consulting-header"
       actions={[
         {
           variant: 'secondary',
@@ -36,22 +36,22 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Server Side Google Tag Manager Consulting"
+    tagline="First-party Analytics Consulting"
     actions={[
-      { variant: 'primary', id:'sgtm-consulting-hero', target: '_black', text: 'Retake your tagging', href: '#services' },
+      { variant: 'primary', id:'analytics-consulting-hero', target: '_black', text: 'Retake your tagging', href: '#services' },
     ]}
     image={{
-      src: 'https://measureschool.com/wp-content/uploads/2023/09/New-Google-Tag-Missing-GA4-Configuration-Tag.png',
+      src: 'https://kinsta.com/wp-content/uploads/2022/08/Cookieless-future.png',
       alt: 'Oasis Hero Image',
     }}
   >
     <Fragment slot="title">
-        Get your insights back with server side Google Tag Manager
+        Thrive in a cookieless world with first-party analytics
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        The new era of privacy is here, and with it comes a new era of tracking. With server side Google Tag Manager, you can take back control of your data and get the insights you need to grow your business.
+        The new era of privacy is here, and with it comes a new era of tracking. With first-party analytics, you can take back control of your data and get the insights you need to grow your business.
     </Fragment>
   </Hero2>
 
@@ -64,14 +64,14 @@ const metadata = {
     columns={2}
     items={[
       {
-        title: 'sGTM Implementation',
+        title: 'sGTM Consulting',
         description:
-          'We can help you understand how server side Google Tag Manager can help your business and how to implement it.',
+          'We can help you understand how Server Side Google Tag Manager can help your business and how to implement it.',
         icon: 'tabler:brand-google',
       },
       {
-        title: 'Data Layer Implementation',
-        description: `We can help you implement a data layer that will help you track the data you need to grow your business.`,
+        title: 'CDP Implementation',
+        description: `We can help you implement a CDP that will help you track the data you need to grow your business.`,
         icon: 'tabler:database',
       },
       {
@@ -81,9 +81,9 @@ const metadata = {
         icon: 'tabler:urgent',
       },
       {
-        title: 'Tag Management',
-        description: `We can help you manage your tags and make sure they're firing correctly.`,
-        icon: 'tabler:tag',
+        title: 'GDPR Compliance',
+        description: `We can help you ensure that your tracking is GDPR compliant.`,
+        icon: 'tabler:lock',
       },
     ]}
   />
@@ -91,22 +91,22 @@ const metadata = {
   <Prices
   prices={[
     {
-      title: 'sGTM Consultation',
+      title: 'sGTM Consulting',
       subtitle: 'Get a roadmap to sGTM success',
-      price: ["$8500"],
+      price: ["$2500"],
       period: 'Flat Rate',
       items: [
         {
           description: 'Dedicated client portal',
         },
         {
-          description: 'Get a 6 month roadmap to better tagging',
+          description: 'Get a 6 month roadmap for sGTM success',
         },
         {
           description: 'Exclusive discounts from our partners',
         },
         {
-          description: 'Discount on implementation',
+          description: 'Dedicated account manager',
         },
       ],
       callToAction: {
@@ -116,10 +116,10 @@ const metadata = {
       },
     },
     {
-      title: 'Consult + Implementation',
-      subtitle: 'Get help implementing sGTM',
-      price: ["$14,500"],
-      period: 'Flat Rate + $800/mo for 6 months',
+      title: 'CDP Implementation',
+      subtitle: 'Get a CDP that churns out insights',
+      price: ["$150/hr"],
+      period: 'Hourly Rate | Project Based',
       items: [
         {
           description: 'Everything from the audit package', 
@@ -135,7 +135,7 @@ const metadata = {
         },
       ],
       callToAction: {
-        id: 'sgtm-implementation-pricing-cta',
+        id: 'cdp-pricing-cta',
         text: 'Schedule a call',
         href: 'https://calendly.com/getoasis',
       },
@@ -283,7 +283,7 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        id: 'sgtm-cta',
+        id: 'analytics-cta',
         text: 'Schedule a consultation',
         href: 'https://calendly.com/getoasis',
         target: '_blank',
