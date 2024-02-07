@@ -7,7 +7,7 @@ layout: '~/layouts/MarkdownLayout.astro'
 
 ## Our Guiding Principles
 
-Life is suffering. This is core to our founders belief as a buddhist. Everywhere you go, you can find suffering in some form, no matter if it is manifesting itself in the complex mechanism  seen in the priveledged enclclaves of the west, or if it is being seen in it's more raw forms found it less priveledged areas. 
+Life is suffering. This is core to our founders belief as a buddhist. Everywhere you go, you can find suffering in some form, no matter if it is manifesting itself in the complex mechanism  seen in the privileged enclclaves of the west, or if it is being seen in it's more raw forms found it less privileged areas. 
 
 Suffering is everywhere. As a company who is taking part in the perpetually toxic machine that is capitalism, we realize that we have to walk a very fine with the projects we manage so that we do not create more suffering than we take out of the world. 
 
