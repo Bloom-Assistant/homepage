@@ -1,6 +1,6 @@
 ---
 title: 'Server-Side Google Tag Manager: Sifting through the noise'
-excerpt: There's a lot of conflicting opinions about the benifits and drawbacks of sGTM, but much of the confusion comes from a lack of real technical analysis
+excerpt: There's a lot of conflicting opinions about the benefits and drawbacks of sGTM, but much of the confusion comes from a lack of real technical analysis
 publishedAt: 2024-02-05T00:00:00Z
 image: https://www.vakulski-group.com/wp-content/uploads/2023/09/GA4-Server-Side-Featured-Image.webp
 category: Analytics
