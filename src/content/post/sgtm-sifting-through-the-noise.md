@@ -37,7 +37,7 @@ Segment is a customer data platform that combines the benifits of web and server
 
 When compared with sGTM, Segment has tried to make the process of tagging more efficient and and smooth designed for non-technical specialists, but this simplicity can come at an increased price point. It has a free plan that can fit small niche websites with less that 1000 visitors/month, and includes only two destinations, but most websites will need a bump up to the next teir, which costs $120/mo.
 
-If your needs are more bulky at more than 30 000 users a day, you will need to pay even more. 
+If your needs are more bulky at more than 30,000 users a day, you will need to pay even more. 
 
  At the end of the day, it may be more profitable to hire an sGTM agency like ours to set up web GTM and sGTM tagging and pay a one-time setup cost rather than recurring costs that will continue to grow if your site grows.
 
@@ -55,7 +55,7 @@ If your needs are more bulky at more than 30 000 users a day, you will need to p
 
 ### Tealium
 
-Tealium is a choise for large enterprise organizations that, for whatever reason, don't want to use GTM either because of Google360 costs or features that Tealium offers compared to GTM. 
+Tealium is a choice for large enterprise organizations that, for whatever reason, don't want to use GTM either because of Google360 costs or features that Tealium offers compared to GTM. 
 
 Their versatility makes it a complex tool to use. Learning the ropes of this platform will take time, but when you find your footing, the sky is the limit for sure. 
 
