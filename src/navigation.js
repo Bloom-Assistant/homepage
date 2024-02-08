@@ -19,7 +19,7 @@ export const headerData = {
         },
       ],
     },
-{
+/* {
   text: 'Who we are',
   links: [
     {
@@ -35,7 +35,7 @@ export const headerData = {
       href: '/open-source'
     },
   ],
-},
+}, */
 {
   text: 'Blog',
   href: getBlogPermalink(),
@@ -61,7 +61,7 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'sGTM Consulting', href: '/services/sgtm-consulting' },
+        { text: 'First-party Analytics Consulting', href: '/services/first-party-analytics-consulting' },
         { text: 'Data Pipeline Audits', href: '/services/data-pipeline-audits' },
         { text: 'Technical Consulting', href: '/services/technical-consulting' },
       ],
