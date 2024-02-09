@@ -11,7 +11,7 @@ metadata:
   title:
     default: Oasis
     template: '%s — Oasis'
-  description: "\U0001F680 The open-source incubation network with a focus on social impact and advocacy."
+  description: "\U0001F680 The values-led fractional xOps team that will lead you out of the desert of tech debt"
   robots:
     index: true
     follow: true
