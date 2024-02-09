@@ -1,0 +1,221 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Pricing',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    tagline="Join the Pilot Program"
+    title="Power your cross-channel collaboration with Oasis"
+    subtitle="Become an early adopter and gain access to exclusive benefits."
+  />
+
+  <!-- Pricing Widget ******************* -->
+
+  <Prices
+    prices={[
+      {
+        title: 'Community Plan',
+        subtitle: 'The first step into the Oasis',
+        price: ["$360"],
+        period: 'Per Month | Community Features Only',
+        items: [
+          {
+            description: 'Unlimited users',
+          },
+          {
+            description: 'Branded real-time partner chat',
+          },
+          {
+            description: 'Org and User Profiles',
+          },
+          {
+            description: 'Save thousands on your Slack bill',
+          },
+        ],
+        callToAction: {
+          text: 'Get a 14-day free trial',
+          href: 'https://forms.fillout.com/t/bHn1ZhE6oLus',
+        },
+      },
+      {
+        title: 'Sales Plan',
+        subtitle: 'Your path to co-selling success',
+        price: ["$2500"],
+        period: 'Per Month | Annual Commitment',
+        items: [
+          {
+            description: 'Everything in Community Plan',
+          },
+          {
+            description: 'Unlimited partners',
+          },
+          {
+            description: 'Ephemeral Co-selling Chat',
+          },
+          {
+            description: 'Org and User Profiles',
+          },
+        ],
+        callToAction: {
+          text: 'Join the waitlist',
+          href: 'https://forms.fillout.com/t/bHn1ZhE6oLus',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'popular',
+      },
+      {
+        title: 'Enterprise Pilot',
+        subtitle: 'Your epic story of mutual growth',
+        price: ["Variable"],
+        period: 'Usage Based | Annual Commitment',
+        items: [
+          {
+            description: 'Fully unlocked platform',
+          },
+          {
+            description: 'E2EE Encrypted Channels',
+          },
+          {
+            description: 'SSO Integration',
+          },
+          {
+            description: 'SOC2 Compliance (Coming Soon)',
+          },
+        ],
+        callToAction: {
+          text: 'Chat with us',
+          href: 'https://forms.fillout.com/t/bHn1ZhE6oLus',
+        },
+      },
+    ]}
+  />
+
+  <Features3
+    title="Features that make collaboration a breeze"
+    subtitle="Our platform is designed to help you and your partners work together seamlessly, with a range of features that enhance your experience."
+    columns={2}
+    items={[
+      {
+        title: 'Ephemeral Co-selling Chats',
+        description: 'Chat with new leads together with partners in real-time by simply sending them a link to your Road.',
+        icon: 'tabler:road',
+      },
+      {
+        title: 'Real-time Collaboration',
+        description: 'Work together with partners in shared channels to create strategy in real-time.',
+        icon: 'tabler:bell',
+      },
+      {
+        title: 'Lead Sharing and Intros (Via Roads)',
+        description: 'Share leads with partners and introduce them to your leads via shared co-selling chats called Roads',
+        icon: 'tabler:map-share',
+      },
+      {
+        title: 'Custom Branding',
+        description: `Keep your brand front and center with custom branding on your Oasis.`,
+        icon: 'tabler:palette',
+      },
+      {
+        title: 'Secure Passwordless Auth',
+        description: 'Login securely with secure passwordless authentication.',
+        icon: 'tabler:sparkles',
+      },
+      {
+        title: '24/7 Customer Support',
+        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        icon: 'tabler:headset',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="A guided journey from plans to creativity"
+    tagline="simplified process"
+    isReversed={true}
+    items={[
+      {
+        title: 'Sign Up',
+        icon: 'tabler:number-1',
+      },
+      {
+        title: 'Complete Onboarding',
+        icon: 'tabler:number-2',
+      },
+      {
+        title: 'Create an Oasis',
+        icon: 'tabler:number-3',
+      },
+      {
+        title: 'Invite Partners',
+        icon: 'tabler:number-4',
+      },
+      {
+        title: 'Share Leads',
+        icon: 'tabler:number-5',
+      },
+      {
+        title: 'See the results!',
+        icon: 'tabler:number-6',
+      },
+    ]}
+    image={{
+      src: 'https://images.pexels.com/photos/3876399/pexels-photo-3876399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      alt: 'Steps image',
+    }}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Pricing FAQs"
+    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    columns={1}
+    items={[
+      {
+        title: 'Do the plans come with customer support?',
+        description:
+          'Yes, all of our plans come with 24/7 customer support. You can contact us via live chat, email or phone, and we will be happy to assist you.',
+      },
+      {
+        title: 'Is there a trial period?',
+        description:
+          "Yes! We offer a 14-day free trial for our Community Plan. You don't need to enter your credit card details to sign up, and you can cancel at any time.",
+      },
+      {
+        title: 'Can I bring my existing toolstack?',
+        description:
+          'Yes, you can integrate your existing tools with our platform. We also offer a range of integrations that you can use to enhance your experience.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Ready to boost your partner operations?"
+    id="pricing-cta"
+    subtitle="Get started today and see the results for yourself"
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Join the waitlist',
+        href: 'https://forms.fillout.com/t/bHn1ZhE6oLus',
+      },
+    ]}
+  />
+</Layout>
