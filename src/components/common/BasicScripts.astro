@@ -54,7 +54,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   window.heap=window.heap||[],heap.load=function(e,t){window.heap.appid=e,window.heap.config=t=t||{};var r=document.createElement("script");r.type="text/javascript",r.async=!0,r.src="https://cdn.heapanalytics.com/js/heap-"+e+".js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(r,a);for(var n=function(e){return function(){heap.push([e].concat(Array.prototype.slice.call(arguments,0)))}},p=["addEventProperties","addUserProperties","clearEventProperties","identify","resetIdentity","removeEventProperty","setEventProperties","track","unsetEventProperty"],o=0;o<p.length;o++)heap[p[o]]=n(p[o])};
   heap.load("55397278");
 
-  
+
   function attachEvent(selector, event, fn) {
     const matches = typeof selector === 'string' ? document.querySelectorAll(selector) : selector;
     if (matches && matches.length) {
@@ -187,7 +187,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Home CTA clicked", {
+      ko.track("Home CTA clicked", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -202,7 +202,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Home Hero clicked", {
+      ko.track("Home Hero clicked", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -252,7 +252,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Data Pipeline CTA clicked 🚰", {
+      ko.track("Data Pipeline CTA clicked 🚰", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -267,7 +267,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Data Pipeline Hero clicked 🚰", {
+      ko.track("Data Pipeline Hero clicked 🚰", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -282,7 +282,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Data Pipeline Header clicked 🚰", {
+      ko.track("Data Pipeline Header clicked 🚰", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -298,7 +298,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Technical Consulting Hero clicked ⚙️", {
+      ko.track("Technical Consulting Hero clicked ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -313,7 +313,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Technical Consulting Header clicked ⚙️", {
+      ko.track("Technical Consulting Header clicked ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -328,7 +328,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Technical Consulting CTA clicked ⚙️", {
+      ko.track("Technical Consulting CTA clicked ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -343,7 +343,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Sand Package Clicked 🏝", {
+      ko.track("Sand Package Clicked 🏝", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -360,7 +360,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Glass Package Clicked 🔮", {
+      ko.track("Glass Package Clicked 🔮", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -377,7 +377,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Diamond Package Clicked 💎", {
+      ko.track("Diamond Package Clicked 💎", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
