@@ -19,30 +19,26 @@ export const headerData = {
         },
       ],
     },
-/* {
-  text: 'Who we are',
+ {
+  text: 'Company',
   links: [
     {
       text: 'Our Principles',
       href: '/our-principles',
     },
     {
-      text: 'Our Model',
-      href: '/our-model',
+      text: 'Client Portal',
+      href: 'https://portal.getoasis.io/login?step=signIn',
     },
-    { 
-      text: 'Open Source', 
-      href: '/open-source'
+    {
+      text: 'Blog',
+      href: getBlogPermalink(),
     },
   ],
-}, */
-{
-  text: 'Blog',
-  href: getBlogPermalink(),
 },
 {
-  text: 'Client Portal',
-  href: 'https://portal.getoasis.io/login?step=signIn',
+  text: 'Pricing',
+  href: '/pricing',
 },
   ],
   actions: [{ text: 'Schedule a chat', href: '/schedule-a-demo', target: '_blank' }],
@@ -55,7 +51,7 @@ export const footerData = {
       links: [
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'Our Principles', href: '/our-principles' },
-        { text: 'Our Model', href: '/our-model' },
+        { text: 'Pricing', href: '/pricing' },
       ],
     },
     {

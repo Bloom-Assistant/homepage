@@ -1,0 +1,227 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Pricing',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    tagline="Let us be your guide"
+    title="Subscription-based plans for every business stage"
+    subtitle="Choose the right amount of hours and schedule a call to get started"
+  />
+
+  <!-- Pricing Widget ******************* -->
+
+  <Prices
+    prices={[
+      {
+        title: 'Sand Package',
+        subtitle: 'The first grain of support',
+        price: ["$3600"],
+        period: 'Per Month | $90hr',
+        items: [
+          {
+            description: '40 Support Hour Limit',
+          },
+          {
+            description: '6 Simple Project Tokens',
+          },
+          {
+            description: '3 Mid-level Project tokens',
+          },
+          {
+            description: 'No Advanced Projects',
+          },
+        ],
+        callToAction: {
+          text: 'Chat with us',
+          href: 'https://calendly.com/getoasis/30min',
+        },
+      },
+      {
+        title: 'Glass Package',
+        subtitle: 'The foundation of innovation',
+        price: ["$5800"],
+        period: 'Per Month | $96hr',
+        items: [
+          {
+            description: '60 Support Hour Limit',
+          },
+          {
+            description: '8 Simple Project Tokens',
+          },
+          {
+            description: '5 Mid-level Project tokens',
+          },
+          {
+            description: '1 Advanced Project Tokens',
+          },
+        ],
+        callToAction: {
+          text: 'Chat with us',
+          href: 'https://calendly.com/getoasis/30min',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'popular',
+      },
+      {
+        title: 'Diamond Package',
+        subtitle: 'The pinnacle of innovation',
+        price: ["$9300"],
+        period: 'Per Month | $116hr',
+        items: [
+          {
+            description: '80 Support Hour Limit',
+          },
+          {
+            description: '12 Simple Project Tokens',
+          },
+          {
+            description: '8 Mid-level Project tokens',
+          },
+          {
+            description: '3 Advanced Project Tokens',
+          },
+        ],
+        callToAction: {
+          text: 'Chat with us',
+          href: 'https://calendly.com/getoasis/30min',
+        },
+      },
+    ]}
+  />
+
+  <Features3
+    title="Processes that make collaboration a breeze"
+    subtitle="We have set up processes that make your client experience seamless and efficient. Here are some of the features that make it possible."
+    columns={2}
+    items={[
+      {
+        title: 'Client Portal',
+        description: 'Hop into our dedicated client portal to chat with us and get updates on your projects.',
+        icon: 'tabler:spiral',
+      },
+      {
+        title: 'Daily Updates',
+        description: 'Get daily updates on your projects and support requests.',
+        icon: 'tabler:bell',
+      },
+      {
+        title: 'Flexible Scope',
+        description: 'Change the scope of your projects and support requests as your business grows.',
+        icon: 'tabler:layout-list',
+      },
+      {
+        title: 'Education & Training',
+        description: `Get educated on the tools and processes we use to support your business. We also offer training sessions.`,
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Painless Billing',
+        description: 'We offer transparent billing and invoicing, so you know exactly what you are paying for.',
+        icon: 'tabler:sparkles',
+      },
+      {
+        title: '24/7 Customer Support',
+        description: 'Questions answered via live chat, email or phone, every calendar day.',
+        icon: 'tabler:headset',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="You're only a few steps away from better processes"
+    tagline="simplified process"
+    isReversed={true}
+    items={[
+      {
+        title: 'Schedule a Call',
+        icon: 'tabler:number-1',
+      },
+      {
+        title: 'Choose a Plan',
+        icon: 'tabler:number-2',
+      },
+      {
+        title: 'Recieve Portal Invite',
+        icon: 'tabler:number-3',
+      },
+      {
+        title: 'Enter Billing Details',
+        icon: 'tabler:number-4',
+      },
+      {
+        title: 'Start the Projects!',
+        icon: 'tabler:number-5',
+      },
+    ]}
+    image={{
+      src: 'https://images.pexels.com/photos/3876399/pexels-photo-3876399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      alt: 'Steps image',
+    }}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <FAQs
+    title="Pricing FAQs"
+    subtitle="Choosing the right plan is important, and we're here to answer your questions. If you have queries about our pricing options, you're in the right place."
+    columns={1}
+    items={[
+      {
+        title: 'What is a token?',
+        description:
+          'A token is a unit of work that we use to measure the complexity of a project. We categorize projects into three levels: simple, mid-level, and advanced. Each plan comes with a set number of tokens for each level. ',
+      },
+      {
+        title: 'What is a project',
+        description:
+          "A project is any task that requires more than 15 minutes of work.",
+      },
+      {
+        title: 'What is a support hour?',
+        description:
+          'A support hour is the time we spend working on your projects or support requests. We track time in 15-minute increments, and you can use your support hours for any of our services.',
+      },
+      {
+        title: 'Do my support hours carry over month to month?',
+        description:
+          'No. Support hours do not carry over from month to month. We recommend that you choose a plan that best suits your needs. If you need more hours, you can always upgrade your plan.',
+      },
+      {
+        title: 'What tools do you support?',
+        description:
+          'Within reason, we can support almost any tool. We have experience with a wide range of tools and platforms, and we are always learning new ones.',
+      },
+    ]}
+  />
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Ready to get started?"
+    id="pricing-cta"
+    subtitle="Schedule a demo to see how we can help you improve your processes."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Schedule a call',
+        href: 'https://calendly.com/getoasis/30min',
+      },
+    ]}
+  />
+</Layout>
