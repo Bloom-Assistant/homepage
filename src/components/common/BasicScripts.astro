@@ -40,6 +40,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   analytics.page();
   }}();
 
+
+    !function(s,n,i,t,c,h){s.SnitchObject=i;s[i]||(s[i]=function(){
+    (s[i].q=s[i].q||[]).push(arguments)});s[i].l=+new Date;c=n.createElement(t);
+    h=n.getElementsByTagName(t)[0];c.src='//snid.snitcher.com/8425289.js';
+    h.parentNode.insertBefore(c,h)}(window,document,'snid','script');
+        
+    snid('verify', '8425289');
+
   if ((defaultTheme && defaultTheme.endsWith(':only')) || (!localStorage.theme && defaultTheme !== 'system')) {
     applyTheme(defaultTheme.replace(':only', ''));
   } else if (
@@ -151,7 +159,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       }
     });
   };
-
+/* 
   function isCalendlyEvent(e) {
     return (
       e.origin === "https://calendly.com" &&
@@ -175,7 +183,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         window.ko.track(eventName, event.data.payload);
       }
     }
-  });
+  }); */
 
   // Wait for the DOM to be fully loaded
 
@@ -187,7 +195,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Home CTA clicked", {
+      analytics.track("Home CTA clicked", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -202,7 +210,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Home Hero clicked", {
+      analytics.track("Home Hero clicked", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -252,7 +260,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Data Pipeline CTA clicked 🚰", {
+      analytics.track("Data Pipeline CTA clicked 🚰", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -267,7 +275,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Data Pipeline Hero clicked 🚰", {
+      analytics.track("Data Pipeline Hero clicked 🚰", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -282,7 +290,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Data Pipeline Header clicked 🚰", {
+      analytics.track("Data Pipeline Header clicked 🚰", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -298,7 +306,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Technical Consulting Hero clicked ⚙️", {
+      analytics.track("Technical Consulting Hero clicked ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -313,7 +321,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Technical Consulting Header clicked ⚙️", {
+      analytics.track("Technical Consulting Header clicked ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -328,7 +336,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Technical Consulting CTA clicked ⚙️", {
+      analytics.track("Technical Consulting CTA clicked ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -343,7 +351,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Sand Package Clicked 🏝", {
+      analytics.track("Sand Package Clicked 🏝", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -360,7 +368,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Glass Package Clicked 🔮", {
+      analytics.track("Glass Package Clicked 🔮", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
@@ -377,7 +385,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Diamond Package Clicked 💎", {
+      analytics.track("Diamond Package Clicked 💎", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
