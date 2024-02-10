@@ -28,23 +28,14 @@ import TypeIt from "typeit";
     }).go();
   });
 
-   !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"];analytics.factory=function(e){return function(){if(window.analytics.initialized)return window.analytics[e].apply(window.analytics,arguments);var i=Array.prototype.slice.call(arguments);i.unshift(e);analytics.push(i);return analytics}};for(var i=0;i<analytics.methods.length;i++){var key=analytics.methods[i];analytics[key]=analytics.factory(key)}analytics.load=function(key,i){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n);analytics._loadOptions=i};analytics._writeKey="Qxquw7W7ZjXynusMDG94MCbQhgYzWalG";analytics.SNIPPET_VERSION="4.16.1";
-      analytics.load("Qxquw7W7ZjXynusMDG94MCbQhgYzWalG");
-      analytics.page({
-        path: window.location.pathname,
-        url: window.location.href,
-        referrer: document.referrer,
-        search: window.location.search,
-        title: document.title,
-        name: document.title,
-      });
-      }}();
+!function(t){if(window.ko)return;window.ko=[],["identify","track","removeListeners","open","on","off","qualify","ready"].forEach(function(t){ko[t]=function(){var n=[].slice.call(arguments);return n.unshift(t),ko.push(n),ko}});var n=document.createElement("script");n.async=!0,n.setAttribute("src","https://cdn.getkoala.com/v1/pk_93901449e3a127db8d71a2c8fa800ff0cb76/sdk.js"),(document.body || document.head).appendChild(n)}();
 
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-LYZS1GDW7B');
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://gtm.getoasis.io/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WSQ83B73');
 
   if ((defaultTheme && defaultTheme.endsWith(':only')) || (!localStorage.theme && defaultTheme !== 'system')) {
     applyTheme(defaultTheme.replace(':only', ''));
@@ -154,6 +145,31 @@ import TypeIt from "typeit";
     });
   };
 
+  function isCalendlyEvent(e) {
+    return (
+      e.origin === "https://calendly.com" &&
+      e.data.event &&
+      e.data.event.indexOf("calendly.") === 0
+    );
+  }
+
+  const eventNames = {
+    "calendly.profile_page_viewed": "Calendly Profile Page Viewed",
+    "calendly.event_type_viewed": "Calendly Event Type Viewed",
+    "calendly.date_and_time_selected": "Calendly Date and Time Selected",
+    "calendly.event_scheduled": "Calendly Event Scheduled",
+  };
+
+  window.addEventListener("message", function (event) {
+    if (isCalendlyEvent(event) && window.ko) {
+      const eventName = eventNames[event.data.event] || event.data.event;
+
+      if (eventName) {
+        window.ko.track(eventName, event.data.payload);
+      }
+    }
+  });
+
   // Wait for the DOM to be fully loaded
 
 
@@ -164,11 +180,9 @@ import TypeIt from "typeit";
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Home CTA clicked", {
+      ko.track("Home CTA clicked", {
         // You can include additional properties here
-        button_text: "Apply to join the collective",
-        value: 200,
-        currency: "USD",
+        button_text: "Schedule a call",
         // Add any other relevant properties
       });
     });
@@ -181,18 +195,16 @@ import TypeIt from "typeit";
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Home Hero clicked", {
+      ko.track("Home Hero clicked", {
         // You can include additional properties here
-        button_text: "Apply to join the collective",
-        value: 200,
-        currency: "USD",
+        button_text: "Schedule a call",
         // Add any other relevant properties
       });
     });
   });
 
 
-  document.addEventListener("DOMContentLoaded", function () {
+/*   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
     var button = document.getElementById("open-source-hero");
 
@@ -224,7 +236,7 @@ import TypeIt from "typeit";
         // Add any other relevant properties
       });
     });
-  });
+  }); */
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
@@ -233,11 +245,9 @@ import TypeIt from "typeit";
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Data Pipeline CTA clicked 🚰", {
+      ko.track("Data Pipeline CTA clicked 🚰", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 8500,
-        currency: "USD",
         // Add any other relevant properties
       });
     });
@@ -250,11 +260,9 @@ import TypeIt from "typeit";
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Data Pipeline Hero clicked 🚰", {
+      ko.track("Data Pipeline Hero clicked 🚰", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 8500,
-        currency: "USD",
         // Add any other relevant properties
       });
     });
@@ -267,11 +275,9 @@ import TypeIt from "typeit";
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Data Pipeline Header clicked 🚰", {
+      ko.track("Data Pipeline Header clicked 🚰", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 8500,
-        currency: "USD",
         // Add any other relevant properties
       });
     });
@@ -285,11 +291,9 @@ import TypeIt from "typeit";
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Technical Consulting Hero clicked ⚙️", {
+      ko.track("Technical Consulting Hero clicked ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
         // Add any other relevant properties
       });
     });
@@ -302,11 +306,9 @@ import TypeIt from "typeit";
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Technical Consulting Header clicked ⚙️", {
+      ko.track("Technical Consulting Header clicked ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
         // Add any other relevant properties
       });
     });
@@ -319,11 +321,9 @@ import TypeIt from "typeit";
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Technical Consulting CTA clicked ⚙️", {
+      ko.track("Technical Consulting CTA clicked ⚙️", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
         // Add any other relevant properties
       });
     });
@@ -331,174 +331,54 @@ import TypeIt from "typeit";
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("custom-work-cta");
+    var button = document.getElementById("sand-package");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Custom Work Pricing CTA clicked (Technical Consulting) ⚙️", {
+      ko.track("Sand Package Clicked 🏝", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
         // Add any other relevant properties
+        value: 3600,
+        currency: "USD",
+      });
+    });
+  });
+
+    document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("glass-package");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      ko.track("Glass Package Clicked 🔮", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        // Add any other relevant properties
+        value: 5800,
+        currency: "USD",
       });
     });
   });
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("audit-implementation-cta");
+    var button = document.getElementById("diamond-package");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      analytics.track("Audit + Implement Pricing CTA clicked (Technical Consulting) ⚙️", {
+      ko.track("Diamond Package Clicked 💎", {
         // You can include additional properties here
         button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
         // Add any other relevant properties
+        value: 9300,
+        currency: "USD",
       });
     });
   });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("audit-cta");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("Audit Pricing CTA clicked (Technical Consulting) ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("cdp-cta");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("CDP Pricing CTA clicked (Data Consulting) ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("enrichment-cta");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("Enrichment Pricing CTA clicked (Data Consulting) ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("full-cycle-cta");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("Full Cycle Pricing CTA clicked (Data Consulting) ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("sgtm-cta");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("sGTM CTA clicked (sGTM Consulting) ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("sgtm-pricing-cta");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("sGTM Pricing CTA clicked (sGTM Consulting) ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("cdp-pricing-cta");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("CDP Implementation CTA clicked (CDP Consulting) ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("analytics-consulting-hero");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("Analytics Consulting Hero Clicked (Analytics Consulting) ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
-
 
   (function(h,o,t,j,a,r){
         h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
