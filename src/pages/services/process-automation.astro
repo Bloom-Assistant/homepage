@@ -14,7 +14,7 @@ import BlogLatestPosts from '~/components/widgets/BlogLatestPosts.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Technical Consulting',
+  title: 'RevOps Technical Enablement',
 };
 ---
 
@@ -22,7 +22,6 @@ const metadata = {
   <Fragment slot="header">
     <Header
       {...headerData}
-      id="technical-consulting-header"
       actions={[
         {
           variant: 'secondary',
@@ -36,22 +35,22 @@ const metadata = {
   <!-- Hero2 Widget ******************* -->
 
   <Hero2
-    tagline="Technical Consulting"
+    tagline="On-Demand Chatbots, SMS Marketing, and Automation"
     actions={[
-      { variant: 'primary', id:'technical-consulting-hero', target: '_black', text: 'Let us show you a better way', href: '#services' },
+      { variant: 'primary', id:'technical-revops-hero', target: '_black', text: 'Let us show you a better way', href: '#services' },
     ]}
     image={{
-      src: 'https://images.pexels.com/photos/3889891/pexels-photo-3889891.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      src: 'https://images.pexels.com/photos/9251624/pexels-photo-9251624.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       alt: 'Oasis Hero Image',
     }}
   >
     <Fragment slot="title">
-        Let us show you how your business can thrive with third-party tools
+      Abstract away the tasks that are holding back your business
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        Even in 2024, many business owners are still missing the mark when it comes to leveraging third-party tools to help their business grow.
+        We can help you turn your business into a well-oiled machine by automating repetitive tasks and reaching your customers where they are.
     </Fragment>
   </Hero2>
 
@@ -60,30 +59,41 @@ const metadata = {
   <Features
     id="services"
     title="What we can provide"
-    subtitle="We've been around the block and have become skilled in over 400 different technical solutions to various problems"
+    subtitle="We've automated almost any task your can imagine, and we can help you do the same. Here are a few examples of what we can do for you."
     columns={2}
     items={[
       {
         title: 'SMS Marketing',
         description:
-          'We can help you set up a SMS marketing campaign that will help you reach your customers where they are.',
+          'We can help you set up an SMS marketing campaign that will help you reach your customers where they are.',
         icon: 'tabler:message',
       },
       {
-        title: 'CDPs',
-        description: `We can help you set up a customer data platform that will help you better understand your customers.`,
+        title: 'Data Entry',
+        description: `We can help you automate your data entry processes to make your business more efficient.`,
         icon: 'tabler:database',
       },
       {
-        title: 'Chatbots',
+        title: 'Website Chatbots',
         description:
-          'We can help you set up a chatbot that will help you automate your customer service and sales processes.',
+          'We can help you set up a chatbot on your website that will help you engage with your customers.',
         icon: 'tabler:robot',
       },
       {
-        title: 'Automation',
-        description: `We can help you make your business more efficient by automating repetitive tasks.`,
-        icon: 'tabler:settings',
+        title: 'Billing Automation',
+        description: `We can help you automate your billing processes to make your business more efficient.`,
+        icon: 'tabler:cash',
+      },
+      {
+        title: 'Notification Infrastructure',
+        description:
+          'We can help you set up a notification infrastructure that will help you stay informed about your business.',
+        icon: 'tabler:robot',
+      },
+      {
+        title: 'Lead Routing',
+        description: `We can help you automate your lead routing processes to help your sales team do what they do best.`,
+        icon: 'tabler:headset',
       },
     ]}
   />
@@ -283,7 +293,7 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        id: 'technical-consulting-cta',
+        id: 'process-automation-cta',
         text: 'Schedule a consultation',
         href: '/schedule-a-demo',
         target: '_blank',

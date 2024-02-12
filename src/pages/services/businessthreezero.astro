@@ -1,0 +1,144 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'About us',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Business 3.0 Migration Support Services"
+    actions={[{ variant:"primary", target: '_blank', text: 'Schedule a consultation', href: '/schedule-a-demo' }]}
+    image={{
+      src: 'https://images.pexels.com/photos/20042295/pexels-photo-20042295/free-photo-of-sunlit-beach-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      alt: 'Sand Jeep image',
+    }}
+  >
+    <Fragment slot="title">
+      It's time to stop viewing tools that can<span class="text-[#FC4C69] dark:text-white highlight"> drive revenue </span>as
+      cost-centers
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Business 3.0 requires a foundational shift in how we view technology to treating tools we once treated as cost-centers as the revenue drivers they are meant to be.
+    </Fragment>
+  </Hero>
+
+  <!-- Stats Widget ****************** -->
+
+
+
+  <!-- Features3 Widget ************** -->
+
+  <Features
+    title="How migration will drive ROI"
+    subtitle="Differentiation is the key to success in the modern landscape, and you need the ability to identify and act on opportunities faster than your competition."
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Customer Experience',
+        description:
+          'The modern customer expects a seamless experience across all touchpoints. We can help you deliver that.',
+        icon: 'tabler:mood-smile',
+      },
+      {
+        title: 'Privacy & Security',
+        description:
+          'The modern business needs to be able to make data-driven decisions. We can help you use first party tracking to adapt to the newest privacy landscape.',
+        icon: 'tabler:cookie-off',
+      },
+      {
+        title: 'Profit Margins',
+        description:
+          'By using the right tools, you can drive revnue and abstract away broken processes that are costing you money.',
+        icon: 'tabler:chart-line',
+      },
+      {
+        title: 'Process Remediation',
+        description:
+          'We can help you identify and remediate broken processes that are costing you money.',
+        icon: 'tabler:bandage',
+      },
+      {
+        title: 'Education',
+        description:
+          'We can help you educate your team on how to use the tools we implement to their full potential.',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Unseen Insights',
+        description:
+          'We can help you identify insights that are currently hidden in your data.',
+        icon: 'tabler:eye',
+      },
+    ]}
+  />
+
+
+  <!-- Steps2 Widget ****************** -->
+
+  <Steps
+    title="Your business's digital transformation is only a few steps away"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Schedule a call</span>',
+        description:
+          "Schedule a time to discuss your business's needs and aspirations so we can tailor a solution that fits like a glove.",
+        icon: 'tabler:calendar',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Choose a plan</em>',
+        description:
+          "Select a package that fits your business's needs. We have a range of options to fit any budget.",
+        icon: 'tabler:tags',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Enter Client Portal</span>',
+        description:
+          'Once you have selected a plan, you will be given access to our client portal where you can track the progress of your transformation.',
+        icon: 'tabler:spiral',
+      },
+      {
+        title: 'Ready!',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.pexels.com/photos/10180294/pexels-photo-10180294.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      alt: 'Steps image',
+    }}
+  />
+
+  <CallToAction
+  actions={[
+    {
+      variant: 'primary',
+      id: 'home-cta',
+      icon: 'tabler:phone',
+      text: 'Schedule a call',
+      href: '/schedule-a-demo',
+      target: '_blank',
+    },
+  ]}
+>
+  <Fragment slot="title">
+    Schedule a consultation</span>
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    Learn how we can drive tangible ROI through our technical expertise
+  </Fragment>
+</CallToAction>
+  <!-- Features2 Widget ************** -->
+
+</Layout>

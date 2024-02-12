@@ -28,17 +28,13 @@ import TypeIt from "typeit";
     }).go();
   });
 
-  !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="Qxquw7W7ZjXynusMDG94MCbQhgYzWalG";;analytics.SNIPPET_VERSION="5.2.0";
-  analytics.load("Qxquw7W7ZjXynusMDG94MCbQhgYzWalG");
-  analytics.page();
-  }}();
 
 
-(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+/* (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://gtm.getoasis.io/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WSQ83B73');
+})(window,document,'script','dataLayer','GTM-WSQ83B73'); */
 
   if ((defaultTheme && defaultTheme.endsWith(':only')) || (!localStorage.theme && defaultTheme !== 'system')) {
     applyTheme(defaultTheme.replace(':only', ''));
@@ -175,6 +171,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   // Wait for the DOM to be fully loaded
 
+!function(t){if(window.ko)return;window.ko=[],["identify","track","removeListeners","open","on","off","qualify","ready"].forEach(function(t){ko[t]=function(){var n=[].slice.call(arguments);return n.unshift(t),ko.push(n),ko}});var n=document.createElement("script");n.async=!0,n.setAttribute("src","https://cdn.getkoala.com/v1/pk_93901449e3a127db8d71a2c8fa800ff0cb76/sdk.js"),(document.body || document.head).appendChild(n)}();
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
@@ -243,91 +240,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("data-pipeline-cta");
+    var button = document.getElementById("diamond-package");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Data Pipeline CTA clicked 🚰", {
+      ko.track("Diamond Package Clicked 💎", {
         // You can include additional properties here
         button_text: "Schedule a call",
         // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("data-pipeline-hero");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      ko.track("Data Pipeline Hero clicked 🚰", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("data-pipeline-header");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      ko.track("Data Pipeline Header clicked 🚰", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("technical-consulting-hero");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      ko.track("Technical Consulting Hero clicked ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("technical-consulting-header");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      ko.track("Technical Consulting Header clicked ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        // Add any other relevant properties
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("technical-consulting-cta");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      ko.track("Technical Consulting CTA clicked ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        // Add any other relevant properties
+        value: 9300,
+        currency: "USD",
       });
     });
   });
@@ -392,22 +315,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         a.appendChild(r);
     })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("analytics-consulting-header");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      analytics.track("Analytics Consulting Header Clicked (Analytics Consulting) ⚙️", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        value: 2500,
-        currency: "USD",
-        // Add any other relevant properties
-      });
-    });
-  });
 
   window.onpageshow = function () {
     document.documentElement.classList.add('motion-safe:scroll-smooth');

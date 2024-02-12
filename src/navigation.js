@@ -6,29 +6,22 @@ export const headerData = {
       text: 'Services',
       links: [
         {
-          text: 'First Party Analytics Consulting',
-          href: '/services/first-party-analytics-consulting',
+          text: 'Process Automation',
+          href: '/services/process-automation',
         },
+        { text: 'TEaaS', href: '/services/teaas' },
         {
-          text: 'Data Pipeline Audits',
-          href: '/services/data-pipeline-audits',
-        },
-        {
-          text: 'Technical Consulting',
-          href: '/services/technical-consulting',
+          text: 'Business 3.0',
+          href: '/services/businessthreezero',
         },
       ],
     },
  {
-  text: 'Company',
+  text: 'Who we are',
   links: [
     {
       text: 'Our Principles',
       href: '/our-principles',
-    },
-    {
-      text: 'Client Portal',
-      href: 'https://portal.getoasis.io/login?step=signIn',
     },
     {
       text: 'Blog',
@@ -39,6 +32,10 @@ export const headerData = {
 {
   text: 'Pricing',
   href: '/pricing',
+},
+{
+  text: 'Client Portal',
+  href: 'https://portal.getoasis.io/login?step=signIn',
 },
   ],
   actions: [{ text: 'Schedule a chat', href: '/schedule-a-demo', target: '_blank' }],
@@ -57,9 +54,15 @@ export const footerData = {
     {
       title: 'Services',
       links: [
-        { text: 'First-party Analytics Consulting', href: '/services/first-party-analytics-consulting' },
-        { text: 'Data Pipeline Audits', href: '/services/data-pipeline-audits' },
-        { text: 'Technical Consulting', href: '/services/technical-consulting' },
+        {
+          text: 'Process Automation',
+          href: '/services/process-automation',
+        },
+        { text: 'TEaaS', href: '/services/teaas' },
+        {
+          text: 'Business 3.0',
+          href: '/services/businessthreezero',
+        },
       ],
     },
     {
