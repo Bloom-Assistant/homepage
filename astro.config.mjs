@@ -83,7 +83,6 @@ export default defineConfig({
       Logger: 1,
     }),
   ],
-
   markdown: {
     remarkPlugins: [readingTimeRemarkPlugin],
   },

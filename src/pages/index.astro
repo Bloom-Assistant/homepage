@@ -24,16 +24,6 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    actions={[
-      {
-        variant: 'primary',
-        text: 'See Plans',
-        icon: 'tabler:arrow-right',
-        id: 'home-hero',
-        href: '/pricing',
-        target: '_blank',
-      },
-    ]}
   >
     <Fragment slot="title">
       Subscription-based <span class="text-[#FC4C69] typewriter"></span> support
@@ -42,6 +32,23 @@ const metadata = {
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
        Oasis is the only team that provides concierge technical consulting wrapped neatly into a monthly subscription
+       <form action="https://getform.io/f/xboM1Beg" method="POST">
+        <div class="mx-auto max-w-2xl sm:flex sm:space-x-3 p-1 bg-white border rounded-lg shadow-lg shadow-gray-100 dark:bg-slate-900 dark:border-gray-700 dark:shadow-gray-900/[.2]">
+          <div class="pb-2 sm:pb-0 sm:flex-[1_0_0%]">
+            <label for="hs-hero-name-1" class="block text-sm font-medium dark:text-white"><span class="sr-only">Your name</span></label>
+            <input name="name" type="text" id="hs-hero-name-1" class="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-[#FC4C69] focus:ring-[#FC4C69] dark:bg-slate-900 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Your name">
+          </div>
+          <div class="pt-2 sm:pt-0 sm:ps-3 border-t border-gray-200 sm:border-t-0 sm:border-s sm:flex-[1_0_0%] dark:border-gray-700">
+            <label for="hs-hero-email-1" class="block text-sm font-medium dark:text-white"><span class="sr-only">Your email address</span></label>
+            <input  name="email" type="email" id="hs-hero-email-1" class="py-3 px-4 block w-full border-transparent rounded-lg text-sm focus:border-[#FC4C69] focus:[#FC4C69] dark:bg-slate-900 dark:border-transparent dark:text-gray-400 dark:focus:ring-gray-600" placeholder="Your email address">
+          </div>
+          <div class="pt-2 my-auto sm:pt-0 grid sm:block sm:flex-[0_0_auto]">
+            <button type="submit" class="py-2 px-4 inline-flex justify-center items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-[#FC4C69] text-white hover:bg-[#FC4C69] disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">
+              Get started
+            </button>
+          </div>
+        </div>
+      </form>
     </Fragment>
   </Hero>
   <!-- Features Widget *************** -->
