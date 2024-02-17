@@ -15,7 +15,7 @@ import CallToAction from '~/components/widgets/CallToAction.astro';
 import TypeIt from "typeit";
 
 const metadata = {
-  title: 'Subscription-based technical consultancy to lead you out of the desert of technical debt',
+  title: 'Subscription-based technical consulting | Oasis',
   ignoreTitleTemplate: true,
 };
 ---
@@ -125,10 +125,10 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <!--
+
 
   <Steps
-    title="Get your dream partner program off the ground with a fractional PSM team."
+    title="Solve your technical debt in 3 easy steps"
     items={[
       {
         title: 'Step 1: <span class="font-medium">Schedule a consultation</span>',
@@ -159,62 +159,45 @@ const metadata = {
     }}
   />
 
-  <!-- Features2 Widget **************
 
   <Features2
     title="Our Operational Stack"
-    subtitle="Every bridge needs a solid foundation. Here are the tools we use to support your partnerships."
+    subtitle="Business in the modern workforce need the right tools to succeed"
     tagline="The Tools 🛠"
     items={[
       {
         title: 'Twilio Segment',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        description: "Our go-to tool for building complex data pipelines is Segment",
         icon: 'tabler:brand-twilio',
       },
       {
         title: 'Google Analytics',
         description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+          "We love Google Analytics for it's ability to provide deep insights into our client's businesses",
         icon: 'tabler:brand-google-analytics',
       },
       {
         title: 'Clearbit',
         description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+          'Clearbit is our go-to tool for building enrichment processes for our clients',
         icon: 'tabler:zoom-money',
       },
       {
-        title: 'Content',
+        title: 'Zapier',
         description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
-        icon: 'flat-color-icons:document',
+          "We love Zapier for it's ability to automate complex business processes",
+        icon: 'tabler:brand-zapier',
       },
       {
-        title: 'Call-to-Action',
+        title: 'Hubspot',
         description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
-        icon: 'flat-color-icons:advertising',
+          'Our CRM of choice is Hubspot, it provides a great platform for our clients to manage their sales and marketing efforts',
+        icon: 'tabler:database',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
-        icon: 'flat-color-icons:currency-exchange',
-      },
-      {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
-        icon: 'flat-color-icons:voice-presentation',
-      },
-      {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
-        icon: 'flat-color-icons:business-contact',
-      },
-      {
-        title: 'Footers',
-        description: "The footer's like the credits of a movie but sprinkled with easter eggs. Time to hunt!",
-        icon: 'flat-color-icons:database',
+        title: 'Intercom',
+        description: 'We love to help our clients build great customer experiences with Intercom',
+        icon: 'tabler:brand-intercom',
       },
     ]}
   >
@@ -222,58 +205,46 @@ const metadata = {
       <div class="absolute inset-0 bg-[#FFEDF4] dark:bg-transparent"></div>
     </Fragment>
   </Features2>
--->
-  <!-- HighlightedPosts Widget ******* 
-
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
-    information={`The blog is used to discuss and educate our audience of partner professionals.
-                        Each new article will be an exclusive look into the world of partnerships as well as new announcements
-                        related to Uppercut.
-                `}
-  />-->
-
-  <!-- FAQs Widget 
 
   <FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into what makes Oasis special."
+    subtitle="Let us help you modernize your business to compete in the new digital economy"
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
       {
-        title: 'Why would I not just use Slack?',
+        title: 'Why do I need technical consulting?',
         description:
-          "We aren't trying to compete with Slack for starters. But the simple answer to this is that our tool is built especially for GTM professionals and partnership teams to facilitate cross organizational collaboration, where Slack requires a restrictive Pro subscription to take advantage of cross-organizational collaboration to it's full extent. This can often cost tens of thousands of dollars at large organizations, where our base collaboration package will only require a monthly subscription of $350",
+          "Today, tools like automated support via chatbots and workflow automation are becoming table stakes for businesses. We can help you understand how to leverage these tools to drive tangible ROI for your business.",
       },
       {
-        title: 'Why is realtime collaboration important?',
+        title: 'When is the right time to modernize?',
         description:
-          "We believe that the power of tools like Slack lies in the ability to send a message while it is top of mind, and get a reply at the earliest possible convenience. This is a missing piece in PRMs today.",
+          "Yesterday was the best time to modernize, but today is the next best time. The longer you wait, the more technical debt you will accumulate, and the harder it will be to modernize.",
       },
       {
-        title: 'How does this compare to tools like PartnerStack?',
+        title: 'What is the difference between Oasis and other consulting firms?',
         description:
-          'PartnerStack and other PRM tools are great if you have a low-activity partnership program and are looking for a way to track revenue. But if you are looking to build a high-velocity partnership program that engages your partners frequently, you need a tool that enables you to collaborate with your partners in real-time.',
+          'Oasis operates on a consulting-as-a-service model that allows us to provide a concierge level of service to our clients. We are one of the only teams that provides CaaS technical consulting wrapped neatly into a transparent monthly subscription.',
       },
       {
-        title: 'What integrations do you support for account mapping?',
+        title: 'What tools do you support?',
         description:
-          "Right now, only Hubspot, but in the future we will be supporting Salesforce, Pipedrive, and more. If you have a specific tool you'd like us to support, please let us know.",
+          "We can figure out a solution with almost any tool under the sun, but quite often if the toolchain you are using is not the best fit for your business, we will recommend a change.",
       },
       {
-        title: "What's your pricing model?",
+        title: "What's the pricing?",
         description:
-          "We offer two seperate pricing packages, one for our community features and one for our Sales plan. The community package is $350/mo and the Sales package is $2500/mo.",
+          "We offer a variety of packages to fit your needs and budget. We also offer a la carte services for those who need a little extra help.",
       },
       {
-        title: 'How do you handle security?',
+        title: 'How does the process work?',
         description:
-          "We use WebAuthn to handle passwordless auth, but we also plan to support enterprise SSO in the near future. All of our data is encrypted at the application level and we use a variety of security tools to ensure that our application is secure. For our enterprise customers, we offer the ability to host Oasis on your own infrastructure, and are working on E2EE channels that should be available in the near future.",
+          "The process is simple. Schedule a consultation, choose a package, and schedule a launch session. Once we have your first payment, we will begin the engagement.",
       },
     ]}
   />
-******************* -->
+
   <!-- Stats Widget ******************
 
   <Stats

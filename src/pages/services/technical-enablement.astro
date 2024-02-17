@@ -8,7 +8,7 @@ import Layout from '~/layouts/PageLayout.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'Business 3.0 Migration Support Services | Oasis',
+  title: 'Technical Enablement| Oasis',
 };
 ---
 
@@ -16,20 +16,20 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="Business 3.0 Migration Support Services"
-    actions={[{ variant:"primary", target: '_blank', text: 'Start the journey', icon: 'tabler:arrow-right', href: '/schedule-a-demo' }]}
+    tagline="Technical Enablement for the Modern Business"
+    actions={[{ variant:"primary", target: '_blank', text: 'Take the plunge', href: '/schedule-a-demo' }]}
     image={{
-      src: 'https://images.pexels.com/photos/20042295/pexels-photo-20042295/free-photo-of-sunlit-beach-on-sea-shore.jpeg?auto=compress&cs=tinysrgb&w=1200',
-      alt: 'Sand Jeep image',
+      src: 'https://images.pexels.com/photos/4405244/pexels-photo-4405244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
+      alt: 'Sand image',
     }}
   >
     <Fragment slot="title">
-      It's time to stop viewing tools that can<span class="text-[#FC4C69] dark:text-white highlight"> drive revenue </span>as
-      cost-centers
+      Stop waiting to for the right time to <br />
+      <span class="text-[#FC4C69] dark:text-white highlight">step into the modern era </span>
     </Fragment>
 
     <Fragment slot="subtitle">
-      Business 3.0 requires a foundational shift in how we view technology to treating tools we once treated as cost-centers as the revenue drivers they are meant to be.
+      The new paradigm for transacting business has been here for awhile, and it's not going anywhere. Get a head start on your business transformation with a simple monthly subscription. 
     </Fragment>
   </Hero>
 
@@ -40,46 +40,46 @@ const metadata = {
   <!-- Features3 Widget ************** -->
 
   <Features
-    title="How migration will drive ROI"
-    subtitle="Differentiation is the key to success in the modern landscape, and you need the ability to identify and act on opportunities faster than your competition."
+    title="Our approach"
+    subtitle="We take a templated process and apply it to your businesses unique transformation needs. Whether you need a few automations set up, or a deeper relationship with your data, we have a solution for you."
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Customer Experience',
+        title: 'Process Automation',
         description:
-          'The modern customer expects a seamless experience across all touchpoints. We can help you deliver that.',
-        icon: 'tabler:mood-smile',
+          'Let us help you automate your business processes. We can help you identify the right processes to automate, and then implement the right tools to make it happen.',
+        icon: 'tabler:bolt',
       },
       {
-        title: 'Privacy & Security',
+        title: 'First-party Analytics',
         description:
-          'The modern business needs to be able to make data-driven decisions. We can help you use first party tracking to adapt to the newest privacy landscape.',
+          'Bring your tracking habits  in line with new privacy regulations. We can help you set up first-party tracking and analytics to keep your data in your hands.',
         icon: 'tabler:cookie-off',
       },
       {
-        title: 'Profit Margins',
+        title: 'Chatbots',
         description:
-          'By using the right tools, you can drive revnue and abstract away broken processes that are costing you money.',
-        icon: 'tabler:chart-line',
+          'We can help you set up chatbots to help your customers get the information they need, when they need it. ',
+        icon: 'tabler:robot',
       },
       {
-        title: 'Process Remediation',
+        title: 'Data Engineering',
         description:
-          'We can help you identify and remediate broken processes that are costing you money.',
-        icon: 'tabler:bandage',
+          'We can help you set up a data pipeline that will help you get the most out of your data. ',
+        icon: 'tabler:robot',
       },
       {
-        title: 'Education',
+        title: 'SMS Marketing',
         description:
-          'We can help you educate your team on how to use the tools we implement to their full potential.',
-        icon: 'tabler:book',
+          'We can help you set up a SMS marketing campaign that will help you reach your customers where they are.',
+        icon: 'tabler:device-mobile-message',
       },
       {
-        title: 'Unseen Insights',
+        title: 'Tooling Audits',
         description:
-          'We can help you identify insights that are currently hidden in your data.',
-        icon: 'tabler:eye',
+          'We can help you audit your current tooling and make recommendations for how to improve your technical stack.',
+        icon: 'tabler:tool',
       },
     ]}
   />
@@ -123,9 +123,8 @@ const metadata = {
   actions={[
     {
       variant: 'primary',
-      id: 'home-cta',
-      icon: 'tabler:arrow-right',
-      text: 'Start the journey',
+      icon: 'tabler:phone',
+      text: 'Schedule a call',
       href: '/schedule-a-demo',
       target: '_blank',
     },

@@ -1,0 +1,229 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Chatbot Implementation Support | Oasis',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Chatbot Implementation Support"
+    actions={[{ variant:"primary", target: '_blank', text: 'Start the journey', icon: 'tabler:arrow-right', href: '/schedule-a-demo' }]}
+    image={{
+      src: 'https://rockcontent.com/wp-content/uploads/2021/11/types-of-chatbots.png.webp',
+      alt: 'Sand Jeep image',
+    }}
+  >
+    <Fragment slot="title">
+      Solve your customer experience problems with an integrated chatbot
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Differentiation is the key to success in the modern landscape, and you need the ability to identify and act on opportunities faster than your competition.
+    </Fragment>
+  </Hero>
+
+  <!-- Stats Widget ****************** -->
+
+
+
+  <!-- Features3 Widget ************** -->
+
+  <Features
+    title="How chatbots can drive ROI"
+    subtitle="Identifying and segmenting inbound leads is crucial to driving revenue. We can help you implement a solution that can do just that."
+    columns={3}
+    isBeforeContent={true}
+    items={[
+      {
+        title: 'Customer Support',
+        description:
+          'The modern customer expects a seamless experience across all touchpoints. Chatbots can help route customers to the right place faster.',
+        icon: 'tabler:mood-smile',
+      },
+      {
+        title: 'Lead Generation',
+        description:
+          'Chatbots can help you identify and segment inbound leads, allowing you to act on opportunities faster.',
+        icon: 'tabler:heart-handshake',
+      },
+      {
+        title: 'Sales Enablement',
+        description:
+          'Chatbots can help your sales team identify and act on opportunities faster than the competition.',
+        icon: 'tabler:shopping-cart',
+      },
+      {
+        title: 'Education',
+        description:
+          'Chatbots can educate your customers on your products and services, driving more sales.',
+        icon: 'tabler:book',
+      },
+      {
+        title: 'Customer Feedback',
+        description:
+          'Chatbots can help you gather feedback from your customers, allowing you to act on opportunities faster.',
+        icon: 'tabler:message',
+      },
+      {
+        title: 'Customer Retention',
+        description:
+          'Chatbots can help you retain customers by providing a seamless experience across all touchpoints.',
+        icon: 'tabler:heart',
+      },
+    ]}
+  />
+
+
+  <!-- Steps2 Widget ****************** 
+
+  <Steps
+    title="Your business's digital transformation is only a few steps away"
+    items={[
+      {
+        title: 'Step 1: <span class="font-medium">Schedule a call</span>',
+        description:
+          "Schedule a time to discuss your business's needs and aspirations so we can tailor a solution that fits like a glove.",
+        icon: 'tabler:calendar',
+      },
+      {
+        title: 'Step 2: <span class="font-medium">Choose a plan</em>',
+        description:
+          "Select a package that fits your business's needs. We have a range of options to fit any budget.",
+        icon: 'tabler:tags',
+      },
+      {
+        title: 'Step 3: <span class="font-medium">Enter Client Portal</span>',
+        description:
+          'Once you have selected a plan, you will be given access to our client portal where you can track the progress of your transformation.',
+        icon: 'tabler:spiral',
+      },
+      {
+        title: 'Ready!',
+        icon: 'tabler:check',
+      },
+    ]}
+    image={{
+      src: 'https://images.pexels.com/photos/10180294/pexels-photo-10180294.jpeg?auto=compress&cs=tinysrgb&w=1200',
+      alt: 'Steps image',
+    }}
+  />-->
+
+  <Features2
+  title="Our Chatbot Stack"
+  subtitle="Implementing a chatbot solution isn't always just about the bot provider. It's important to have the right tools in place to support the bots fucntionality and automation."
+  tagline="The Tools 🛠"
+  items={[
+    {
+      title: 'Intercom',
+      description: "Our go-to tool for building deep chat experiences is Intercom. We love it's ability to provide deep insights into our client's businesses",
+      icon: 'tabler:brand-intercom',
+    },
+    {
+      title: 'Google Analytics',
+      description:
+        "We love Google Analytics for it's ability to provide deep insights into our client's businesses",
+      icon: 'tabler:brand-google-analytics',
+    },
+    {
+      title: 'Clearbit',
+      description:
+        'Clearbit is our go-to tool for building enrichment processes for our clients',
+      icon: 'tabler:zoom-money',
+    },
+    {
+      title: 'Zapier',
+      description:
+        "We love Zapier for it's ability to automate complex business processes",
+      icon: 'tabler:brand-zapier',
+    },
+    {
+      title: 'Hubspot',
+      description:
+        'Our CRM of choice is Hubspot, it provides a great platform for our clients to manage their sales and marketing efforts',
+      icon: 'tabler:database',
+    },
+    {
+      title: 'Slack',
+      description: 'We love to use Slack as an internal notification system for our clients.',
+      icon: 'tabler:brand-slack',
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-[#FFEDF4] dark:bg-transparent"></div>
+  </Fragment>
+</Features2>
+
+<FAQs
+title="Frequently Asked Questions"
+subtitle="Dive into the following questions to gain insights into what makes Oasis special."
+tagline="FAQs"
+classes={{ container: 'max-w-6xl' }}
+items={[
+  {
+    title: 'Do I own the infrastructure?',
+    description:
+      "Yes, you own the infrastructure. We will help you set up the infrastructure, but you will have full control over it. We can also help you set up your own infrastructure if you prefer.",
+  },
+  {
+    title: 'Can we use other tools besides Intercom?',
+    description:
+      "Yes! We're comforable working with a variety of tools. We can help you set up and manage a variety of tools, including Hubspot Chat, Drift, and more. If you have a specific tool you'd like to use, please let us know and we can help you set it up.",
+  },
+  {
+    title: 'How many automations can I have?',
+    description:
+      'The number of automations managed by us is based on the plan you choose. From there, you can set up as many automations as you need that you manage. If you need us to handle more automations, you can upgrade your plan at any time.',
+  },
+  {
+    title: 'What CRMs do you support',
+    description:
+      "We support a variety of CRMs, including Salesforce, Hubspot, and more. If you have a specific CRM you'd like to use, please let us know and we can help you set it up. We also offer a custom CRM solution that we can help you set up.",
+  },
+  {
+    title: "What's your pricing?",
+    description:
+      "Our pricing is fully transparent and can be found on our pricing page. We offer a variety of plans to fit any budget, and we can also create a custom plan for you if you have specific needs. ",
+  },
+  {
+    title: 'How do you handle credential sharing?',
+    description:
+      "We have a secure portal that you can use to share credentials with us and vice versa.",
+  },
+]}
+/>
+
+  <CallToAction
+  actions={[
+    {
+      variant: 'primary',
+      id: 'home-cta',
+      icon: 'tabler:arrow-right',
+      text: 'Start the journey',
+      href: '/schedule-a-demo',
+      target: '_blank',
+    },
+  ]}
+>
+  <Fragment slot="title">
+    Schedule a consultation</span>
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    Learn how we can drive tangible ROI through our technical expertise
+  </Fragment>
+</CallToAction>
+  <!-- Features2 Widget ************** -->
+
+</Layout>
