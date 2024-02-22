@@ -92,4 +92,4 @@ For organizations seeking budget-friendly alternatives to Zapier, [Pabbly Connec
 
 ## How to choose the right process automation platform
 
-Choosing the right process automation platform for your business stage and technical expertise will save you a lot of stress in the long term. With the right tools and streamlined processes, your team will be freed up to execute on your strategies and create revenue generating opportunities. If you think this sounds like something your organization would like assistance with, [let's find some time to chat about working together](/schedule-a-demo)!
+Choosing the right process automation platform for your business stage and technical expertise will save you a lot of stress in the long term. With the right tools and streamlined processes, your team will be freed up to execute on your strategies and create revenue generating opportunities. If you think this sounds like something your organization would like assistance with, [let's find some time to chat about working together](/consultation)!
