@@ -9,7 +9,7 @@ tags:
     - automation
     - digital transformation
 metadata:
-    canonical: https://wwww.getoasis.io/how-process-automation-guides-digital-transformation
+    canonical: https://wwww.getoasis.io/how-process-automation-can-help-guide
 ---
 
 The pandemic was a powerful catalyst for a digital revolution, forcing businesses to adapt and innovate at breakneck speed. Remote work became the norm, e-commerce boomed, and customer behavior shifted dramatically. As we emerge into a post-pandemic world, one thing remains clear: **digital transformation is no longer an option, it's an imperative.**
