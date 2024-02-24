@@ -9,15 +9,24 @@ export const headerData = {
           text: 'Process Automation',
           href: '/services/process-automation',
         },
-        { text: 'Technical Enablement', href: '/services/technical-enablement' },
+        { text: 'MarTech Support', href: '/services/martech' },
         {
-          text: 'Chatbot Support',
-          href: '/services/chatbots',
+          text: 'First-party Analytics', href: '/services/first-party-analytics',
+        }
+      ],
+    },
+    {
+      text: 'Calculators',
+      links: [
+        {
+          text: 'Automation Savings Calculator',
+          href: '/calculators/automation-savings',
         },
+        { text: 'CDP ROI Calculator', href: '/calculators/cdp-roi' },
       ],
     },
  {
-  text: 'Who we are',
+  text: 'Company',
   links: [
     {
       text: 'Our Principles',
@@ -28,14 +37,6 @@ export const headerData = {
       href: getBlogPermalink(),
     },
   ],
-},
-{
-  text: 'Pricing',
-  href: '/pricing',
-},
-{
-  text: 'Client Portal',
-  href: 'https://portal.getoasis.io/login?step=signIn',
 },
   ],
   actions: [{ text: 'Schedule a chat', href: '/consultation', target: '_blank' }],
@@ -48,7 +49,6 @@ export const footerData = {
       links: [
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'Our Principles', href: '/our-principles' },
-        { text: 'Pricing', href: '/pricing' },
       ],
     },
     {
@@ -63,6 +63,16 @@ export const footerData = {
           text: 'Chatbot Support',
           href: '/services/chatbots',
         },
+      ],
+    },
+    {
+      title: 'Calculators',
+      links: [
+        {
+          text: 'Automation Savings Calculator',
+          href: '/calculators/automation-savings',
+        },
+        { text: 'CDP ROI Calculator', href: '/calculators/cdp-roi' },
       ],
     },
     {

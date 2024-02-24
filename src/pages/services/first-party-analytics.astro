@@ -7,6 +7,7 @@ import Features from '~/components/widgets/Features.astro';
 import Steps2 from '~/components/widgets/Steps2.astro';
 import Content from '~/components/widgets/Content.astro';
 import Prices from '~/components/widgets/Pricing.astro';
+import Features2 from '~/components/widgets/Features2.astro';
 
 import { headerData } from '~/navigation';
 import FAQs from '~/components/widgets/FAQs.astro';
@@ -38,10 +39,10 @@ const metadata = {
   <Hero2
     tagline="First-party Analytics Consulting"
     actions={[
-      { variant: 'primary', id:'analytics-consulting-hero', target: '_black', text: 'Retake your tagging', href: '#services' },
+      { variant: 'primary', id:'analytics-consulting-hero', target: '_black', text: 'Schedule a consultation', href: '#services' },
     ]}
     image={{
-      src: 'https://kinsta.com/wp-content/uploads/2022/08/Cookieless-future.png',
+      src: 'https://images.pexels.com/photos/4405244/pexels-photo-4405244.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2',
       alt: 'Oasis Hero Image',
     }}
   >
@@ -64,9 +65,9 @@ const metadata = {
     columns={2}
     items={[
       {
-        title: 'sGTM Consulting',
+        title: 'Multi-domain Tracking',
         description:
-          'We can help you understand how Server Side Google Tag Manager can help your business and how to implement it.',
+          'We can help you set up multi-domain tracking so you can track users across multiple domains.',
         icon: 'tabler:brand-google',
       },
       {
@@ -87,6 +88,52 @@ const metadata = {
       },
     ]}
   />
+
+  <Features2
+  title="Our Operational Stack"
+  subtitle="Getting your message out there requires the right tools and the right team"
+  tagline="The Tools 🛠"
+  items={[
+    {
+      title: 'Twilio Segment',
+      description: "Our go-to tool for building complex data pipelines is Segment",
+      icon: 'tabler:brand-twilio',
+    },
+    {
+      title: 'Google Analytics',
+      description:
+        "We love Google Analytics for it's ability to provide deep insights into our client's businesses",
+      icon: 'tabler:brand-google-analytics',
+    },
+    {
+      title: 'Adobe Analytics',
+      description:
+        'Clearbit is our go-to tool for building enrichment processes for our clients',
+      icon: 'tabler:brand-adobe',
+    },
+    {
+      title: 'Zapier',
+      description:
+        "We love Zapier for it's ability to automate complex business processes",
+      icon: 'tabler:brand-zapier',
+    },
+    {
+      title: 'Hubspot',
+      description:
+        'Our CRM of choice is Hubspot, it provides a great platform for our clients to manage their sales and marketing efforts',
+      icon: 'tabler:database',
+    },
+    {
+      title: 'Intercom',
+      description: 'We love to help our clients build great customer experiences with Intercom',
+      icon: 'tabler:brand-intercom',
+    },
+  ]}
+>
+  <Fragment slot="bg">
+    <div class="absolute inset-0 bg-[#FFEDF4] dark:bg-transparent"></div>
+  </Fragment>
+</Features2>
 <!--
   <Prices
   prices={[

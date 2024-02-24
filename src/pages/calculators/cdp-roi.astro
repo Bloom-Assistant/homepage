@@ -1,0 +1,54 @@
+---
+import Features2 from '~/components/widgets/Features2.astro';
+import Features from '~/components/widgets/Features.astro';
+import Hero from '~/components/widgets/Hero.astro';
+import Stats from '~/components/widgets/Stats.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Layout from '~/layouts/PageLayout.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+const metadata = {
+  title: 'Customer Data Platform ROI Calculator | Oasis',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero Widget ******************* -->
+
+  <Hero
+    tagline="Stop throwing money away on broken processes"
+  >
+    <Fragment slot="title">
+     Calculate your ROI on a CDP investment 
+    </Fragment>
+
+    <Fragment slot="subtitle">
+      Let's see if a CDP is right for your organization
+    </Fragment>
+  </Hero>
+
+
+  <div style="width:50%;height:500px;" data-fillout-id="fhynpk1pA6us" data-fillout-embed-type="standard" data-fillout-inherit-parameters data-fillout-dynamic-resize></div><script src="https://server.fillout.com/embed/v1/"></script>
+
+  <CallToAction
+  actions={[
+    {
+      variant: 'primary',
+      id: 'home-cta',
+      icon: 'tabler:arrow-right',
+      text: 'Start the journey',
+      href: '/consultation',
+      target: '_blank',
+    },
+  ]}
+>
+  <Fragment slot="title">
+    Schedule a consultation</span>
+  </Fragment>
+
+  <Fragment slot="subtitle">
+    Learn how we can drive tangible ROI through our technical expertise
+  </Fragment>
+</CallToAction>
+  <!-- Features2 Widget ************** -->
+
+</Layout>
