@@ -16,17 +16,17 @@ export const headerData = {
       ],
     },
     {
-      text: 'Calculators',
+      text: 'ROI Calculators',
       links: [
         {
-          text: 'Automation Savings Calculator',
+          text: 'Automation Savings',
           href: '/calculators/automation-savings',
         },
-        { text: 'CDP ROI Calculator', href: '/calculators/cdp-roi' },
+        { text: 'CDP ROI', href: '/calculators/cdp-roi' },
       ],
     },
  {
-  text: 'Company',
+  text: 'About',
   links: [
     {
       text: 'Our Principles',
@@ -37,6 +37,10 @@ export const headerData = {
       href: getBlogPermalink(),
     },
   ],
+},
+{
+  text: 'Pricing',
+  href: '/pricing',
 },
   ],
   actions: [{ text: 'Schedule a chat', href: '/consultation', target: '_blank' }],
@@ -49,6 +53,10 @@ export const footerData = {
       links: [
         { text: 'Blog', href: getBlogPermalink() },
         { text: 'Our Principles', href: '/our-principles' },
+        {
+          text: 'Pricing',
+          href: '/pricing',
+        },
       ],
     },
     {
