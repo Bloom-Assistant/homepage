@@ -6,7 +6,7 @@ export const headerData = {
       text: 'Home',
       href: '/',
     },
-    {
+    { 
       text: 'Solutions',
       links: [
         {
