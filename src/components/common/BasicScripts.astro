@@ -256,13 +256,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
   });
 
+  // Identify user with analytics.js when the hero-form is submitted
   document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
+    // Find the form by its ID
     var form = document.getElementById("hero-form");
 
+    // Add a submit event listener to the form
     form.addEventListener("submit", function () {
-      // Track the event using Segment
-      analytics.identify("A user has been identified!", {
+      // Identify the user using Segment
+      analytics.identify(document.getElementById("email").value, {
         // You can include additional properties here
         email: document.getElementById("email").value,
         name: document.getElementById("name").value,
