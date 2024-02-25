@@ -257,35 +257,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   });
 
   // Identify user with analytics.js when the hero-form is submitted
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the form by its ID
-    var form = document.getElementById("hero-form");
-
-    // Add a submit event listener to the form
-    form.addEventListener("submit", function () {
-      // Identify the user using Segment
-      analytics.identify(document.getElementById("email").value, {
-        // You can include additional properties here
-        email: document.getElementById("email").value,
-        name: document.getElementById("name").value,
-        // Add any other relevant properties
-      });
-    });
-  });
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("diamond-package");
+    var form = document.getElementById("hero-form");
 
     // Add a click event listener to the button
-    button.addEventListener("click", function () {
+    form.addEventListener("submit", function () {
       // Track the event using Segment
-      analytics.track("Diamond Package Clicked 💎", {
+      analytics.identify("User Identified 🔍", {
         // You can include additional properties here
-        button_text: "Get Started",
-        // Add any other relevant properties
-        value: 2400,
-        currency: "USD",
+        email: document.getElementById("hs-hero-name-1").value,
+        name:  document.getElementById("hs-hero-email-1").value,
       });
     });
   });
