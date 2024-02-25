@@ -239,6 +239,19 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
   }); */
 
+  document.addEventListener(
+  "sleekNote",
+  function(e) {
+      if (e.data.type == "submit" && window.analytics) {
+          window.analytics.identify(null, {
+              email: e.data.email
+          });
+          window.analytics.track("formSubmitted");
+      }
+  },
+  false
+);
+
     document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
     var button = document.getElementById("sand-package");
