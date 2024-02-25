@@ -260,7 +260,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Find the button by its ID
     var form = document.getElementById("hero-form");
 
-    button.addEventListener("click", function () {
+    form.addEventListener("submit", function () {
       // Track the event using Segment
       analytics.identify("A user has been identified!", {
         // You can include additional properties here
