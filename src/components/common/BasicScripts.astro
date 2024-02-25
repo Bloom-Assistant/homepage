@@ -239,52 +239,35 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
   }); */
 
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("ai-bundle");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      ko.track("AI Bundle Clicked 👾", {
-        // You can include additional properties here
-        button_text: "Schedule a call",
-        // Add any other relevant properties
-        value: 5600,
-        currency: "USD",
-      });
-    });
-  });
-
-  document.addEventListener("DOMContentLoaded", function () {
-    // Find the button by its ID
-    var button = document.getElementById("process-automations");
-
-    // Add a click event listener to the button
-    button.addEventListener("click", function () {
-      // Track the event using Segment
-      ko.track("Process Automation CTA Clicked ⚙️", {
-        // You can include additional properties here
-        button_text: "Order now",
-        // Add any other relevant properties
-        value: 105,
-        currency: "USD",
-      });
-    });
-  });
-
     document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
-    var button = document.getElementById("chatbots");
+    var button = document.getElementById("sand-package");
 
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Chatbot CTA Clicked 🤖", {
+      ko.track("Sand Package Clicked 🏝", {
         // You can include additional properties here
-        button_text: "Order Now",
+        button_text: "Get Started",
         // Add any other relevant properties
         value: 1200,
+        currency: "USD",
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("diamond-package");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      ko.track("Diamond Package Clicked 💎", {
+        // You can include additional properties here
+        button_text: "Get Started",
+        // Add any other relevant properties
+        value: 2400,
         currency: "USD",
       });
     });
