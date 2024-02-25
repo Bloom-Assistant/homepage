@@ -239,6 +239,16 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
   }); */
 
+
+	(function () {
+		var sleeknoteScriptTag = document.createElement("script");
+		sleeknoteScriptTag.type = "text/javascript";
+		sleeknoteScriptTag.charset = "utf-8";
+		sleeknoteScriptTag.src = ("//sleeknotecustomerscripts.sleeknote.com/163111.js");
+		var s = document.getElementById("sleeknoteScript");
+		s.parentNode.insertBefore(sleeknoteScriptTag, s);
+	})();
+
   document.addEventListener(
   "sleekNote",
   function(e) {
