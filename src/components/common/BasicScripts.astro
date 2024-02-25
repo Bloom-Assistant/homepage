@@ -239,6 +239,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     });
   }); */
 
+  window._nQc="89725570"
+  
   document.addEventListener(
   "sleekNote",
   function(e) {
@@ -283,6 +285,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         email: document.getElementById("hs-hero-name-1").value,
         name:  document.getElementById("hs-hero-email-1").value,
       });
+      analytics.track('Form Submission - Hero Form');
     });
   });
 
