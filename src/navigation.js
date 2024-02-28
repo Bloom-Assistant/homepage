@@ -28,7 +28,7 @@ export const headerData = {
     },
     {
       text: 'MarTech App Spotlights',
-      href: '/videos/app-spotlights',
+      href: '/videos/martech-app-spotlights',
     },
     {
       text: 'Blog',
