@@ -19,22 +19,16 @@ export const headerData = {
         }
       ],
     },
-    {
-      text: 'ROI Calculators',
-      links: [
-        {
-          text: 'Automation Savings',
-          href: '/calculators/automation-savings',
-        },
-        { text: 'CDP ROI', href: '/calculators/cdp-roi' },
-      ],
-    },
  {
-  text: 'About',
+  text: 'Resources',
   links: [
     {
-      text: 'Our Principles',
-      href: '/our-principles',
+      text: 'CDP ROI Calculator',
+      href: '/calculators/cdp-roi',
+    },
+    {
+      text: 'MarTech App Spotlights',
+      href: '/videos/app-spotlights',
     },
     {
       text: 'Blog',
@@ -63,28 +57,34 @@ export const footerData = {
         },
       ],
     },
-    {
-      title: 'Services',
+    { 
+      title: 'Solutions',
       links: [
         {
           text: 'Process Automation',
           href: '/services/process-automation',
         },
-        { text: 'Technical Enablement', href: '/services/technical-enablement' },
+        { text: 'MarTech Support', href: '/services/martech' },
         {
-          text: 'Chatbot Support',
-          href: '/services/chatbots',
-        },
+          text: 'First-party Analytics', href: '/services/first-party-analytics',
+        }
       ],
     },
     {
-      title: 'Calculators',
+      title: 'Resources',
       links: [
         {
-          text: 'Automation Savings Calculator',
-          href: '/calculators/automation-savings',
+          text: 'CDP ROI Calculator',
+          href: '/calculators/cdp-roi',
         },
-        { text: 'CDP ROI Calculator', href: '/calculators/cdp-roi' },
+        {
+          text: 'MarTech App Spotlights',
+          href: '/videos/app-spotlights',
+        },
+        {
+          text: 'Blog',
+          href: getBlogPermalink(),
+        },
       ],
     },
     {
