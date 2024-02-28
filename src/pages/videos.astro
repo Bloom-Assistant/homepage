@@ -1,0 +1,49 @@
+---
+import Layout from '~/layouts/LandingLayout.astro';
+
+import Hero from '~/components/widgets/Hero.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Schedule a free consultation',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- Hero2 Widget ******************* -->
+
+  <Hero
+    title="MarTech Spotlight Gallery"
+    subtitle="Check out our free gallery of MarTech tools and resources to help you grow your business."
+  />
+    <!-- Calendly inline widget begin -->
+<!-- Cal inline embed code begins -->
+<div class="container mx-auto">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+        <div class="iframe-container rounded overflow-hidden">
+            <iframe class="mx-auto md:w-[560px] md:h-[315px]" src="https://www.youtube.com/embed/zqnM9yzD8ZU?si=tSK5_TmAp5RggMhl" title="Vimeo video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+          </div>
+      <div class="iframe-container rounded overflow-hidden">
+        <iframe class="mx-auto md:w-[560px] md:h-[315px]" src="https://www.youtube.com/embed/1JZ-xCsJMQI?si=qHKkGDn4UfGfHmKz" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <div class="iframe-container bg-gray-200 rounded overflow-hidden">
+        <iframe class="mx-auto md:w-[560px] md:h-[315px]" src="https://www.youtube.com/embed/JKaKuwWjAR0?si=DuWLMfeEJ9FRMY1Q" title="YouTube video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Cal inline embed code ends -->
+
+  <CallToAction
+    title="Connect with us"
+    subtitle="We are always available to answer any questions you may have. Contact us and we will get back to you as soon as possible."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Chat with us',
+        href: 'https://wa.me/18657763192',
+        icon: 'tabler:brand-whatsapp',
+      },
+    ]}
+  />
+</Layout>
