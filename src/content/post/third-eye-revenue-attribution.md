@@ -56,4 +56,4 @@ For example, imagine you have a partnership of six organizations that have these
 
 These organizations could each [map each others domains to their tagging endpoints](https://www.simoahava.com/gtm-tips/map-multiple-domains-server-side-tagging-endpoint/), and create a analytics network for their partnership. 
 
-As a whole, server side GTM has a much higher tracking hit rate than client side, so opting for the benifits it brings both with accuracy and the ability to streamline partner attribution is a no-brainer. If you'd like to chat about how Oasis can help your organization set up a partner attribution network, [let's set up some time to chat](/consultation)
+As a whole, server side GTM has a much higher tracking hit rate than client side, so opting for the benifits it brings both with accuracy and the ability to streamline partner attribution is a no-brainer. If you'd like to chat about how Oasis can help your organization set up a partner attribution network, [let's set up some time to chat](https://www.servicebell.com/jdbohrman)

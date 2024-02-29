@@ -41,7 +41,7 @@ export const headerData = {
   href: '/pricing',
 },
   ],
-  actions: [{ text: 'Schedule a chat', href: '/consultation', target: '_blank' }],
+  actions: [{ text: 'Schedule a chat', href: 'https://www.servicebell.com/jdbohrman', target: '_blank' }],
 };
 
 export const footerData = {

@@ -52,4 +52,4 @@ Make sure to get buy-in from key stakeholders by educating them about the benefi
 
 Remember, process automation is not a silver bullet. It's a strategic tool that requires careful planning and execution. But by **embracing automation effectively**, you can build a more efficient, agile, and data-driven organization, ready to thrive in the new normal and beyond.
 
-If this sounds like something you'd like to have help with, [let's chat about how we might be able to work together](/consultation)! We're always on the lookout for chances to help people streamline their processes. 
+If this sounds like something you'd like to have help with, [let's chat about how we might be able to work together](https://www.servicebell.com/jdbohrman)! We're always on the lookout for chances to help people streamline their processes. 
