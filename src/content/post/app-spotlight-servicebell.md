@@ -2,7 +2,7 @@
 title: 'MarTech App Spotlight: Servicebell'
 excerpt: Servicebell is a powerful web chat platform that goes beyond static text messages
 publishedAt: 2024-02-29T00:00:00Z
-image: https://www.dropbox.com/scl/fi/qm1it1x79kyi1zhirts4a/2.png?rlkey=vci3rgvrc8qxb6ofo9wm8oi4q&dl=1
+image: https://www.dropbox.com/scl/fi/d8okxmpnwahlqb6q1ru6u/sberl.png?rlkey=glggg2m82rz7isif61j0vzna1&dl=1
 category: Spotlight
 tags: 
     - chatbots
