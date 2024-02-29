@@ -2,7 +2,7 @@
 title: 'How sGTM can help you open the third eye of your partnership revenue attribution 🔮'
 excerpt: You don't need ayahuasca to get powerful insights into partnership revenue attribution
 publishedAt: 2024-01-18T00:00:00Z
-image: https://f4.bcbits.com/img/0019701343_10.jpg
+image: https://www.dropbox.com/scl/fi/40tlsa74qfdku5knfjdxb/sgtmthirdeye.png?rlkey=89o82zomnjlhdfurvmjj3g52a&dl=1
 category: Attribution
 tags: 
     - sGTM

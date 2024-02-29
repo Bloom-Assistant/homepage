@@ -1,18 +1,20 @@
 ---
-title: 'App Spotlight: Servicebell'
+title: 'MarTech App Spotlight: Servicebell'
 excerpt: Servicebell is a powerful web chat platform that goes beyond static text messages
-publishedAt: 2024-02-21T00:00:00Z
-image: https://www.dropbox.com/scl/fi/o36ufk1mcpjwqu7xu1tjq/servicebellspot.png?rlkey=l4rbrb4r6r8mwyc5z9ryf37v9&dl=1
+publishedAt: 2024-02-29T00:00:00Z
+image: https://www.dropbox.com/scl/fi/qm1it1x79kyi1zhirts4a/2.png?rlkey=vci3rgvrc8qxb6ofo9wm8oi4q&dl=1
 category: Spotlight
 tags: 
     - chatbots
     - warm leads
     - sales tools
 metadata:
-    canonical: https://wwww.getoasis.io/sgtm-sifting-through-the-noise
+    canonical: https://wwww.getoasis.io/app-spotlight-servicebell
 ---
 
 In today's fast-paced online world, capturing website visitors' attention and converting them into leads is more critical than ever. Traditional contact forms and email submissions often result in slow response times and lost opportunities. This is where Servicebell steps in, offering a dynamic and engaging website chat solution that empowers businesses to connect with their audience instantly and convert them into satisfied customers.
+
+We've recently become partners with a super innovative new platform called Servicebell that blew us away the firs time we saw it in action. Today, there are a ton of in-app chat platforms, and even ones that provide the promide of warm calls, but Servicebell takes those features a step further by placing you in front of web visitors from the first moment you land on the page. 
 
 ## What is Servicebell?
 
@@ -40,4 +42,4 @@ This allows your team to deliver on their targets through boosted sales producti
 
 ServiceBell is a platform built for companies who have strong inbound, and a team dedicated to converting it. It doesn't matter if you're B2B or B2C, but you should have either 50-1000 employees, or a recent funding round. They support either Hubspot or Salesforce, and can connect to over 20+ of the apps and services you use daily. 
 
-If you're a GTM team that boasts a strong inbound motion and want to try the best way to [engage with warm buyers on your site](https://www.servicebell.com/inbound-sales), you'll want to give Servicebell some consideration. 
+If you're part of a GTM team that boasts a strong inbound motion and you want to demo one of the best tools for [engaging with warm buyers on your site](https://www.servicebell.com/inbound-sales), shoot an email to [tryservicebell@getoasis.io](mailto:tryservicebell@getoasis.io)

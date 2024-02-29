@@ -2,7 +2,7 @@
 title: 'Server-Side Google Tag Manager: Sifting through the noise'
 excerpt: There's a lot of conflicting opinions about the benefits and drawbacks of sGTM, so let's look at what you really get when switching to server-side tracking
 publishedAt: 2024-02-05T00:00:00Z
-image: https://www.dropbox.com/scl/fi/sio7zn9z0zlzvx0l5xttr/sgtmban.png?rlkey=ztlxi0koj4pi7pc7ne6kzg93w&dl=1
+image: https://www.dropbox.com/scl/fi/jprbtzky0ap5ontoqugiy/sgtmnoise.png?rlkey=qkaekdpf7ptql57scz4j0thxh&dl=1
 category: Analytics
 tags: 
     - tag manager

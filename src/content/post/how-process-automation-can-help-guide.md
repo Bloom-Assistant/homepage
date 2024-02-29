@@ -2,7 +2,7 @@
 title: 'How process automation can help guide post-pandemic digital transformations'
 excerpt: The benefits of process automation extend far beyond simple time savings. It's a strategic weapon that can transform your business in several key ways.
 publishedAt: 2024-02-21T00:00:00Z
-image: https://www.dropbox.com/scl/fi/zpleppy9qi3krwr8fso2q/How-To-Style-An-Oversized-Wardrobe.png?rlkey=i75t3o992yxcbp8un6v9ra2w0&dl=1
+image: https://www.dropbox.com/scl/fi/lgxbggy5v2l2djdamv4ch/automationtools.png?rlkey=69f4cq9rcy8nd2lw2886hqder&dl=1
 category: Digital Transformation
 tags: 
     - thought leadership
