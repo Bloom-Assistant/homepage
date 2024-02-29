@@ -14,7 +14,7 @@ metadata:
 
 In today's fast-paced online world, capturing website visitors' attention and converting them into leads is more critical than ever. Traditional contact forms and email submissions often result in slow response times and lost opportunities. This is where Servicebell steps in, offering a dynamic and engaging website chat solution that empowers businesses to connect with their audience instantly and convert them into satisfied customers.
 
-We've recently become partners with a super innovative new platform called Servicebell that blew us away the firs time we saw it in action. Today, there are a ton of in-app chat platforms, and even ones that provide the promide of warm calls, but Servicebell takes those features a step further by placing you in front of web visitors from the first moment you land on the page. 
+Today there are a ton of in-app chat platforms solutions, and even ones that provide the promise of warm calls, but Servicebell takes those features a step further by placing you in front of web visitors from the first moment you land on the page. 
 
 ## What is Servicebell?
 
@@ -42,4 +42,4 @@ This allows your team to deliver on their targets through boosted sales producti
 
 ServiceBell is a platform built for companies who have strong inbound, and a team dedicated to converting it. It doesn't matter if you're B2B or B2C, but you should have either 50-1000 employees, or a recent funding round. They support either Hubspot or Salesforce, and can connect to over 20+ of the apps and services you use daily. 
 
-If you're part of a GTM team that boasts a strong inbound motion and you want to demo one of the best tools for [engaging with warm buyers on your site](https://www.servicebell.com/inbound-sales), shoot an email to [tryservicebell@getoasis.io](mailto:tryservicebell@getoasis.io)
+If you're part of a GTM team that boasts a strong inbound motion and you want to try one of the most unique tools for [engaging with warm buyers on your site](https://www.servicebell.com/inbound-sales), go ahead a [create a free account](https://app.servicebell.com/auth/sign-up?utm_source=oasis)!
