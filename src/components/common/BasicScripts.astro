@@ -32,6 +32,11 @@ import ServiceBell from "@servicebell/widget";
   !function(w,d){function e(e,n){w.ServiceBell.q=w.ServiceBell.q||[],w.ServiceBell.q.push([e,n])}if(!w.ServiceBell){var i=function(n){for(var i=arguments.length,r=new Array(i>1?i-1:0),c=1;c<i;c++)r[c-1]=arguments[c];e(n,r)};["init","identify","dial","alert","bookMeeting","hide","show","expand","collapse","connect","disconnect"].forEach((function(r){i[r]=function(){for(var i=arguments.length,r=new Array(i),c=0;c<i;c++)r[c]=arguments[c];e(n,r)}})),w.ServiceBell=i}var s=d.createElement("script");s.id="service-bell-script",s.src="https://cdn.servicebell.com/main.js",s.async=1;var r=d.getElementsByTagName("script")[0];r.parentNode.insertBefore(s,r)}(window,document);
   ServiceBell("init", "7bc73213d6e0420294c658fcd7691339", { mode: "iframe-jit" });
 
+  !function(){var i="analytics",analytics=window[i]=window[i]||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","screen","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware","register"];analytics.factory=function(e){return function(){if(window[i].initialized)return window[i][e].apply(window[i],arguments);var n=Array.prototype.slice.call(arguments);if(["track","screen","alias","group","page","identify"].indexOf(e)>-1){var c=document.querySelector("link[rel='canonical']");n.push({__t:"bpc",c:c&&c.getAttribute("href")||void 0,p:location.pathname,u:location.href,s:location.search,t:document.title,r:document.referrer})}n.unshift(e);analytics.push(n);return analytics}};for(var n=0;n<analytics.methods.length;n++){var key=analytics.methods[n];analytics[key]=analytics.factory(key)}analytics.load=function(key,n){var t=document.createElement("script");t.type="text/javascript";t.async=!0;t.setAttribute("data-global-segment-analytics-key",i);t.src="https://cdn.segment.com/analytics.js/v1/" + key + "/analytics.min.js";var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(t,r);analytics._loadOptions=n};analytics._writeKey="Qxquw7W7ZjXynusMDG94MCbQhgYzWalG";;analytics.SNIPPET_VERSION="5.2.0";
+  analytics.load("Qxquw7W7ZjXynusMDG94MCbQhgYzWalG");
+  analytics.page();
+  }}();
+
 /* (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -171,7 +176,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
   });
 
-/*   // Wait for the DOM to be fully loaded
+  // Wait for the DOM to be fully loaded
 
   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
@@ -180,9 +185,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Home CTA clicked", {
+      ko.track("Meeting Scheduled! 📆 (Home CTA)", {
         // You can include additional properties here
         button_text: "Schedule a call",
+        conversion_id: 15917994
         // Add any other relevant properties
       });
     });
@@ -195,14 +201,126 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     // Add a click event listener to the button
     button.addEventListener("click", function () {
       // Track the event using Segment
-      ko.track("Home Hero clicked", {
+      analytics.track("Meeting Scheduled! 📆 (Home Hero)", {
         // You can include additional properties here
         button_text: "Schedule a call",
+        conversion_id: 15917994
         // Add any other relevant properties
       });
     });
-  }); */
+  });
 
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("martech-hero");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Meeting Scheduled! 📆 (Martech Hero)", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        conversion_id: 15917994
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("martech-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Meeting Scheduled! 📆 (Martech CTA)", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        conversion_id: 15917994
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("pricing-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Meeting Scheduled! 📆 (Pricing CTA)", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        conversion_id: 15917994
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("diamond-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Meeting Scheduled! 📆 (Diamond Package)", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        conversion_id: 15917994
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("martech-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Meeting Scheduled! 📆 (Sand Package)", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        conversion_id: 15917994
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("process-automation-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Meeting Scheduled! 📆 (Process Automation CTA)", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        conversion_id: 15917994
+        // Add any other relevant properties
+      });
+    });
+  });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    // Find the button by its ID
+    var button = document.getElementById("analytics-cta");
+
+    // Add a click event listener to the button
+    button.addEventListener("click", function () {
+      // Track the event using Segment
+      analytics.track("Meeting Scheduled! 📆 (Analytics CTA)", {
+        // You can include additional properties here
+        button_text: "Schedule a call",
+        conversion_id: 15917994
+        // Add any other relevant properties
+      });
+    });
+  });
 
 /*   document.addEventListener("DOMContentLoaded", function () {
     // Find the button by its ID
